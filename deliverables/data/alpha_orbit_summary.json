@@ -1,0 +1,153 @@
+{
+  "source": "PARC-Delta v1.4 sample_pb11_alpha_birth, beam_lab frame, E_p = 0.675 MeV, alpha0 + alpha1 unweighted",
+  "alphas_per_branch": 2100,
+  "integrator": "Boris, dt = 0.4 ns, 4 us, bilinear (r,z) field interpolation",
+  "mirror_ratio_on_axis": 1.6265365079897778,
+  "loss_cone_abs_pitch_cosine": 0.6206421737179155,
+  "fraction_in_loss_cone_at_birth": 0.3969047619047619,
+  "birth_energy_mev": {
+    "mean": 3.1189626475904757,
+    "min": 0.00639472136299446,
+    "max": 6.836602720021347
+  },
+  "scan": {
+    "1.0T": {
+      "fractions": {
+        "alpha0": {
+          "confined": 0.004285714285714286,
+          "end loss": 0.23047619047619047,
+          "limiter/wall": 0.7614285714285715,
+          "target hit": 0.0038095238095238095
+        },
+        "alpha1": {
+          "confined": 0.039523809523809524,
+          "end loss": 0.19238095238095237,
+          "limiter/wall": 0.7514285714285714,
+          "target hit": 0.016666666666666666
+        },
+        "all": {
+          "confined": 0.021904761904761906,
+          "end loss": 0.21142857142857144,
+          "limiter/wall": 0.7564285714285715,
+          "target hit": 0.010238095238095239
+        }
+      },
+      "fraction_with_foil_recrossing": 0.009761904761904762,
+      "median_time_to_first_foil_recrossing_us": 1.4616,
+      "mean_foil_recrossings_per_alpha": 0.019523809523809523
+    },
+    "2.0T": {
+      "fractions": {
+        "alpha0": {
+          "confined": 0.20523809523809525,
+          "end loss": 0.3628571428571429,
+          "limiter/wall": 0.22952380952380952,
+          "target hit": 0.20238095238095238
+        },
+        "alpha1": {
+          "confined": 0.14095238095238094,
+          "end loss": 0.39285714285714285,
+          "limiter/wall": 0.30238095238095236,
+          "target hit": 0.16380952380952382
+        },
+        "all": {
+          "confined": 0.1730952380952381,
+          "end loss": 0.37785714285714284,
+          "limiter/wall": 0.26595238095238094,
+          "target hit": 0.1830952380952381
+        }
+      },
+      "fraction_with_foil_recrossing": 0.15714285714285714,
+      "median_time_to_first_foil_recrossing_us": 1.6186,
+      "mean_foil_recrossings_per_alpha": 0.28476190476190477
+    },
+    "3.0T": {
+      "fractions": {
+        "alpha0": {
+          "confined": 0.21857142857142858,
+          "end loss": 0.38761904761904764,
+          "limiter/wall": 0.0014285714285714286,
+          "target hit": 0.3923809523809524
+        },
+        "alpha1": {
+          "confined": 0.22380952380952382,
+          "end loss": 0.4057142857142857,
+          "limiter/wall": 0.0,
+          "target hit": 0.37047619047619046
+        },
+        "all": {
+          "confined": 0.2211904761904762,
+          "end loss": 0.39666666666666667,
+          "limiter/wall": 0.0007142857142857143,
+          "target hit": 0.38142857142857145
+        }
+      },
+      "fraction_with_foil_recrossing": 0.3404761904761905,
+      "median_time_to_first_foil_recrossing_us": 1.5472000000000001,
+      "mean_foil_recrossings_per_alpha": 0.6247619047619047
+    },
+    "4.0T": {
+      "fractions": {
+        "alpha0": {
+          "confined": 0.1742857142857143,
+          "end loss": 0.38952380952380955,
+          "limiter/wall": 0.0,
+          "target hit": 0.4361904761904762
+        },
+        "alpha1": {
+          "confined": 0.15476190476190477,
+          "end loss": 0.40190476190476193,
+          "limiter/wall": 0.0,
+          "target hit": 0.44333333333333336
+        },
+        "all": {
+          "confined": 0.16452380952380952,
+          "end loss": 0.39571428571428574,
+          "limiter/wall": 0.0,
+          "target hit": 0.43976190476190474
+        }
+      },
+      "fraction_with_foil_recrossing": 0.3530952380952381,
+      "median_time_to_first_foil_recrossing_us": 1.2536,
+      "mean_foil_recrossings_per_alpha": 0.7085714285714285
+    }
+  },
+  "target_offset_scan_at_design_B0": {
+    "0mm": {
+      "confined": 0.2211904761904762,
+      "end loss": 0.39666666666666667,
+      "limiter/wall": 0.0007142857142857143,
+      "target hit": 0.38142857142857145
+    },
+    "40mm": {
+      "confined": 0.19404761904761905,
+      "end loss": 0.3954761904761905,
+      "limiter/wall": 0.03571428571428571,
+      "target hit": 0.37476190476190474
+    },
+    "80mm": {
+      "confined": 0.20785714285714285,
+      "end loss": 0.3904761904761905,
+      "limiter/wall": 0.09404761904761905,
+      "target hit": 0.3076190476190476
+    },
+    "120mm": {
+      "confined": 0.19357142857142856,
+      "end loss": 0.36714285714285716,
+      "limiter/wall": 0.18023809523809523,
+      "target hit": 0.259047619047619
+    },
+    "160mm": {
+      "confined": 0.15880952380952382,
+      "end loss": 0.3211904761904762,
+      "limiter/wall": 0.3423809523809524,
+      "target hit": 0.17761904761904762
+    }
+  },
+  "caveats": [
+    "Collisionless orbits; no plasma potential, no collisions, no foil energy loss or scattering.",
+    "Foil re-crossings are counted but particles are kept; every re-crossing costs energy in reality.",
+    "Insertion arm modelled as a 16 mm wide vertical strip in the X = 0 plane."
+  ],
+  "runtime_s": 17.83603310585022
+}
