@@ -1,0 +1,146 @@
+{
+  "bench_plasma": {
+    "n_e_m3": 1e+19,
+    "T_e_eV": 10.0,
+    "T_p_eV": 2.0,
+    "ln_lambda": 12.0
+  },
+  "slowing_down": {
+    "1.50MeV": {
+      "time_to_50keV_ms": 3.9620394811971753,
+      "time_to_half_energy_ms": 2.5429550800959992,
+      "electron_share_of_deposited_energy": 0.9994110786733271,
+      "proton_share_of_deposited_energy": 0.0005889213266728754
+    },
+    "3.12MeV": {
+      "time_to_50keV_ms": 11.689869988604784,
+      "time_to_half_energy_ms": 7.461950911595607,
+      "electron_share_of_deposited_energy": 0.9994346139230438,
+      "proton_share_of_deposited_energy": 0.0005653860769562202
+    },
+    "5.70MeV": {
+      "time_to_50keV_ms": 28.722567626810104,
+      "time_to_half_energy_ms": 18.483735277167774,
+      "electron_share_of_deposited_energy": 0.9994442332141511,
+      "proton_share_of_deposited_energy": 0.000555766785848899
+    }
+  },
+  "alpha_budget": {
+    "beam_current_uA": 10.0,
+    "foil_thickness_um": 1.0,
+    "assumed_cross_section_barn": 1.2,
+    "reactions_per_s": 958688885.3318498,
+    "alphas_per_s": 2876066655.995549,
+    "trapped_fraction_at_birth": 0.6030952380952381,
+    "effective_lifetime_target_limited_us": 1.5472,
+    "effective_lifetime_slowing_limited_ms": 11.689869988604784,
+    "plasma_volume_m3": 0.08957308973915218,
+    "alpha_density_target_limited_m3": 29960.82363764621,
+    "alpha_density_slowing_limited_m3": 226369010.51939067,
+    "reference_case_alpha_to_proton_ratio": 0.02,
+    "alpha_density_required_at_bench_density_m3": 2e+17,
+    "shortfall_factor_best_case": 883513160.839072,
+    "beam_power_on_foil_W_upper_bound": 6.75,
+    "verdict": "Fusion-born alphas from a uA-class beam-foil source cannot reach the alpha density needed for IBW self-excitation; PDX-1 Phase 1 measures the birth spectrum and orbit physics, and Phase 2 needs a surrogate energetic-ion ring."
+  },
+  "resonance_map": {
+    "B0_T": 3.000000000000001,
+    "f_c_alpha_MHz": 23.02550615639921,
+    "f_c_proton_MHz": 45.73555931283251,
+    "f_c_B11_5plus_MHz": 20.922461003498256,
+    "f_lower_hybrid_MHz": 627.7020679895696,
+    "f_pe_GHz": 28.393024826466853,
+    "channels": {
+      "A1": {
+        "f_MHz": 57.56376539099803,
+        "layers": [
+          {
+            "harmonic": 2,
+            "x_mm": -649.9999999999999
+          },
+          {
+            "harmonic": 2,
+            "x_mm": 645.0000000000002
+          }
+        ]
+      },
+      "A2": {
+        "f_MHz": 80.58927154739723,
+        "layers": [
+          {
+            "harmonic": 3,
+            "x_mm": -559.9999999999999
+          },
+          {
+            "harmonic": 3,
+            "x_mm": 554.9999999999999
+          }
+        ]
+      },
+      "A3": {
+        "f_MHz": 103.61477770379645,
+        "layers": [
+          {
+            "harmonic": 3,
+            "x_mm": -1120.0
+          },
+          {
+            "harmonic": 3,
+            "x_mm": -840.0
+          },
+          {
+            "harmonic": 3,
+            "x_mm": 835.0000000000002
+          },
+          {
+            "harmonic": 3,
+            "x_mm": 1115.0
+          },
+          {
+            "harmonic": 4,
+            "x_mm": -500.0
+          },
+          {
+            "harmonic": 4,
+            "x_mm": 494.9999999999999
+          }
+        ]
+      },
+      "A4": {
+        "f_MHz": 126.64028386019565,
+        "layers": [
+          {
+            "harmonic": 4,
+            "x_mm": -1174.9999999999998
+          },
+          {
+            "harmonic": 4,
+            "x_mm": -749.9999999999999
+          },
+          {
+            "harmonic": 4,
+            "x_mm": 744.9999999999999
+          },
+          {
+            "harmonic": 4,
+            "x_mm": 1170.0000000000002
+          },
+          {
+            "harmonic": 5,
+            "x_mm": -454.99999999999983
+          },
+          {
+            "harmonic": 5,
+            "x_mm": 449.99999999999994
+          }
+        ]
+      }
+    },
+    "A2_4th_harmonic_layer_shift_mm_per_1pct": null,
+    "note": "Channel plan is illustrative: (n+1/2) x f_c,alpha at B0, between alpha harmonics where IBW branches exist."
+  },
+  "caveats": [
+    "Slowing-down uses the expected (mean) Rosenbluth drag of PARC-Delta v1.6 with fixed Maxwellian electron/proton reservoirs; no boron, impurities or neutrals.",
+    "Cross-section 1.2 b is an approximate resonance value (assumption); the budget conclusion holds for any value within 10x."
+  ]
+}

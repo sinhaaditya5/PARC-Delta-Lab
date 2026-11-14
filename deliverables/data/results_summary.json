@@ -1,0 +1,588 @@
+{
+  "project": "PARC-Delta",
+  "device": "PDX-1 linear test stand (concept)",
+  "date": "2026-11-01",
+  "magnet": {
+    "design": "PDX-1 concept coil set (2 mirror + 6 main REBCO HTS coils, conduction-cooled at 20 K)",
+    "amp_turns_per_main_coil": 666416.7205443529,
+    "amp_turns_per_mirror_coil": 2793639.61798767,
+    "engineering_current_density_main_A_mm2": 55.53472671202941,
+    "engineering_current_density_mirror_A_mm2": 142.53263357079948,
+    "B0_on_axis_T": 3.000000000000001,
+    "B_max_on_axis_T": 4.879609523969332,
+    "mirror_throat_position_m": 0.9900000000000002,
+    "mirror_ratio": 1.626536507989777,
+    "peak_field_at_conductor_T": 9.977292117610281,
+    "stored_magnetic_energy_MJ": 14.185331534472924,
+    "hoop_stress_estimate_MPa": {
+      "M3": 38.72852795687746,
+      "MR-R": 170.4852555570234
+    },
+    "winding_surface_field_T": {
+      "MR-L": {
+        "Bz_inner": 9.8519687616012,
+        "Bz_outer": -4.535907253878269,
+        "Bmax_surface": 9.977292117610274
+      },
+      "M1": {
+        "Bz_inner": 4.586912090085324,
+        "Bz_outer": -0.47461690244769494,
+        "Bmax_surface": 4.732585620600408
+      },
+      "M2": {
+        "Bz_inner": 4.074131907245453,
+        "Bz_outer": -0.6301919738995537,
+        "Bmax_surface": 4.139072272022945
+      },
+      "M3": {
+        "Bz_inner": 3.943937472057398,
+        "Bz_outer": -0.700332995428103,
+        "Bmax_surface": 4.003077713650146
+      },
+      "M4": {
+        "Bz_inner": 3.943937472057403,
+        "Bz_outer": -0.700332995428102,
+        "Bmax_surface": 4.003077713650141
+      },
+      "M5": {
+        "Bz_inner": 4.074131907245457,
+        "Bz_outer": -0.6301919738995532,
+        "Bmax_surface": 4.139072272022936
+      },
+      "M6": {
+        "Bz_inner": 4.586912090085329,
+        "Bz_outer": -0.4746169024476931,
+        "Bmax_surface": 4.7325856206003944
+      },
+      "MR-R": {
+        "Bz_inner": 9.851968761601206,
+        "Bz_outer": -4.535907253878278,
+        "Bmax_surface": 9.977292117610281
+      }
+    },
+    "method": "magpylib analytic loops, 8x10 filaments per winding pack",
+    "caveats": [
+      "Hoop stress is a J*B*R screening estimate without structural credit; needs FEA.",
+      "Field map ignores iron, leads, joints and coil-case eddy currents.",
+      "Design iteration: the first pass assumed NbTi at 4.2 K; the ~10 T mirror-coil winding field exceeds practical NbTi margins, so the baseline was changed to REBCO HTS at 20 K."
+    ]
+  },
+  "orbits": {
+    "source": "PARC-Delta v1.4 sample_pb11_alpha_birth, beam_lab frame, E_p = 0.675 MeV, alpha0 + alpha1 unweighted",
+    "alphas_per_branch": 2100,
+    "integrator": "Boris, dt = 0.4 ns, 4 us, bilinear (r,z) field interpolation",
+    "mirror_ratio_on_axis": 1.6265365079897778,
+    "loss_cone_abs_pitch_cosine": 0.6206421737179155,
+    "fraction_in_loss_cone_at_birth": 0.3969047619047619,
+    "birth_energy_mev": {
+      "mean": 3.1189626475904757,
+      "min": 0.00639472136299446,
+      "max": 6.836602720021347
+    },
+    "scan": {
+      "1.0T": {
+        "fractions": {
+          "alpha0": {
+            "confined": 0.004285714285714286,
+            "end loss": 0.23047619047619047,
+            "limiter/wall": 0.7614285714285715,
+            "target hit": 0.0038095238095238095
+          },
+          "alpha1": {
+            "confined": 0.039523809523809524,
+            "end loss": 0.19238095238095237,
+            "limiter/wall": 0.7514285714285714,
+            "target hit": 0.016666666666666666
+          },
+          "all": {
+            "confined": 0.021904761904761906,
+            "end loss": 0.21142857142857144,
+            "limiter/wall": 0.7564285714285715,
+            "target hit": 0.010238095238095239
+          }
+        },
+        "fraction_with_foil_recrossing": 0.009761904761904762,
+        "median_time_to_first_foil_recrossing_us": 1.4616,
+        "mean_foil_recrossings_per_alpha": 0.019523809523809523
+      },
+      "2.0T": {
+        "fractions": {
+          "alpha0": {
+            "confined": 0.20523809523809525,
+            "end loss": 0.3628571428571429,
+            "limiter/wall": 0.22952380952380952,
+            "target hit": 0.20238095238095238
+          },
+          "alpha1": {
+            "confined": 0.14095238095238094,
+            "end loss": 0.39285714285714285,
+            "limiter/wall": 0.30238095238095236,
+            "target hit": 0.16380952380952382
+          },
+          "all": {
+            "confined": 0.1730952380952381,
+            "end loss": 0.37785714285714284,
+            "limiter/wall": 0.26595238095238094,
+            "target hit": 0.1830952380952381
+          }
+        },
+        "fraction_with_foil_recrossing": 0.15714285714285714,
+        "median_time_to_first_foil_recrossing_us": 1.6186,
+        "mean_foil_recrossings_per_alpha": 0.28476190476190477
+      },
+      "3.0T": {
+        "fractions": {
+          "alpha0": {
+            "confined": 0.21857142857142858,
+            "end loss": 0.38761904761904764,
+            "limiter/wall": 0.0014285714285714286,
+            "target hit": 0.3923809523809524
+          },
+          "alpha1": {
+            "confined": 0.22380952380952382,
+            "end loss": 0.4057142857142857,
+            "limiter/wall": 0.0,
+            "target hit": 0.37047619047619046
+          },
+          "all": {
+            "confined": 0.2211904761904762,
+            "end loss": 0.39666666666666667,
+            "limiter/wall": 0.0007142857142857143,
+            "target hit": 0.38142857142857145
+          }
+        },
+        "fraction_with_foil_recrossing": 0.3404761904761905,
+        "median_time_to_first_foil_recrossing_us": 1.5472000000000001,
+        "mean_foil_recrossings_per_alpha": 0.6247619047619047
+      },
+      "4.0T": {
+        "fractions": {
+          "alpha0": {
+            "confined": 0.1742857142857143,
+            "end loss": 0.38952380952380955,
+            "limiter/wall": 0.0,
+            "target hit": 0.4361904761904762
+          },
+          "alpha1": {
+            "confined": 0.15476190476190477,
+            "end loss": 0.40190476190476193,
+            "limiter/wall": 0.0,
+            "target hit": 0.44333333333333336
+          },
+          "all": {
+            "confined": 0.16452380952380952,
+            "end loss": 0.39571428571428574,
+            "limiter/wall": 0.0,
+            "target hit": 0.43976190476190474
+          }
+        },
+        "fraction_with_foil_recrossing": 0.3530952380952381,
+        "median_time_to_first_foil_recrossing_us": 1.2536,
+        "mean_foil_recrossings_per_alpha": 0.7085714285714285
+      }
+    },
+    "target_offset_scan_at_design_B0": {
+      "0mm": {
+        "confined": 0.2211904761904762,
+        "end loss": 0.39666666666666667,
+        "limiter/wall": 0.0007142857142857143,
+        "target hit": 0.38142857142857145
+      },
+      "40mm": {
+        "confined": 0.19404761904761905,
+        "end loss": 0.3954761904761905,
+        "limiter/wall": 0.03571428571428571,
+        "target hit": 0.37476190476190474
+      },
+      "80mm": {
+        "confined": 0.20785714285714285,
+        "end loss": 0.3904761904761905,
+        "limiter/wall": 0.09404761904761905,
+        "target hit": 0.3076190476190476
+      },
+      "120mm": {
+        "confined": 0.19357142857142856,
+        "end loss": 0.36714285714285716,
+        "limiter/wall": 0.18023809523809523,
+        "target hit": 0.259047619047619
+      },
+      "160mm": {
+        "confined": 0.15880952380952382,
+        "end loss": 0.3211904761904762,
+        "limiter/wall": 0.3423809523809524,
+        "target hit": 0.17761904761904762
+      }
+    },
+    "caveats": [
+      "Collisionless orbits; no plasma potential, no collisions, no foil energy loss or scattering.",
+      "Foil re-crossings are counted but particles are kept; every re-crossing costs energy in reality.",
+      "Insertion arm modelled as a 16 mm wide vertical strip in the X = 0 plane."
+    ],
+    "runtime_s": 17.83603310585022
+  },
+  "bench": {
+    "bench_plasma": {
+      "n_e_m3": 1e+19,
+      "T_e_eV": 10.0,
+      "T_p_eV": 2.0,
+      "ln_lambda": 12.0
+    },
+    "slowing_down": {
+      "1.50MeV": {
+        "time_to_50keV_ms": 3.9620394811971753,
+        "time_to_half_energy_ms": 2.5429550800959992,
+        "electron_share_of_deposited_energy": 0.9994110786733271,
+        "proton_share_of_deposited_energy": 0.0005889213266728754
+      },
+      "3.12MeV": {
+        "time_to_50keV_ms": 11.689869988604784,
+        "time_to_half_energy_ms": 7.461950911595607,
+        "electron_share_of_deposited_energy": 0.9994346139230438,
+        "proton_share_of_deposited_energy": 0.0005653860769562202
+      },
+      "5.70MeV": {
+        "time_to_50keV_ms": 28.722567626810104,
+        "time_to_half_energy_ms": 18.483735277167774,
+        "electron_share_of_deposited_energy": 0.9994442332141511,
+        "proton_share_of_deposited_energy": 0.000555766785848899
+      }
+    },
+    "alpha_budget": {
+      "beam_current_uA": 10.0,
+      "foil_thickness_um": 1.0,
+      "assumed_cross_section_barn": 1.2,
+      "reactions_per_s": 958688885.3318498,
+      "alphas_per_s": 2876066655.995549,
+      "trapped_fraction_at_birth": 0.6030952380952381,
+      "effective_lifetime_target_limited_us": 1.5472,
+      "effective_lifetime_slowing_limited_ms": 11.689869988604784,
+      "plasma_volume_m3": 0.08957308973915218,
+      "alpha_density_target_limited_m3": 29960.82363764621,
+      "alpha_density_slowing_limited_m3": 226369010.51939067,
+      "reference_case_alpha_to_proton_ratio": 0.02,
+      "alpha_density_required_at_bench_density_m3": 2e+17,
+      "shortfall_factor_best_case": 883513160.839072,
+      "beam_power_on_foil_W_upper_bound": 6.75,
+      "verdict": "Fusion-born alphas from a uA-class beam-foil source cannot reach the alpha density needed for IBW self-excitation; PDX-1 Phase 1 measures the birth spectrum and orbit physics, and Phase 2 needs a surrogate energetic-ion ring."
+    },
+    "resonance_map": {
+      "B0_T": 3.000000000000001,
+      "f_c_alpha_MHz": 23.02550615639921,
+      "f_c_proton_MHz": 45.73555931283251,
+      "f_c_B11_5plus_MHz": 20.922461003498256,
+      "f_lower_hybrid_MHz": 627.7020679895696,
+      "f_pe_GHz": 28.393024826466853,
+      "channels": {
+        "A1": {
+          "f_MHz": 57.56376539099803,
+          "layers": [
+            {
+              "harmonic": 2,
+              "x_mm": -649.9999999999999
+            },
+            {
+              "harmonic": 2,
+              "x_mm": 645.0000000000002
+            }
+          ]
+        },
+        "A2": {
+          "f_MHz": 80.58927154739723,
+          "layers": [
+            {
+              "harmonic": 3,
+              "x_mm": -559.9999999999999
+            },
+            {
+              "harmonic": 3,
+              "x_mm": 554.9999999999999
+            }
+          ]
+        },
+        "A3": {
+          "f_MHz": 103.61477770379645,
+          "layers": [
+            {
+              "harmonic": 3,
+              "x_mm": -1120.0
+            },
+            {
+              "harmonic": 3,
+              "x_mm": -840.0
+            },
+            {
+              "harmonic": 3,
+              "x_mm": 835.0000000000002
+            },
+            {
+              "harmonic": 3,
+              "x_mm": 1115.0
+            },
+            {
+              "harmonic": 4,
+              "x_mm": -500.0
+            },
+            {
+              "harmonic": 4,
+              "x_mm": 494.9999999999999
+            }
+          ]
+        },
+        "A4": {
+          "f_MHz": 126.64028386019565,
+          "layers": [
+            {
+              "harmonic": 4,
+              "x_mm": -1174.9999999999998
+            },
+            {
+              "harmonic": 4,
+              "x_mm": -749.9999999999999
+            },
+            {
+              "harmonic": 4,
+              "x_mm": 744.9999999999999
+            },
+            {
+              "harmonic": 4,
+              "x_mm": 1170.0000000000002
+            },
+            {
+              "harmonic": 5,
+              "x_mm": -454.99999999999983
+            },
+            {
+              "harmonic": 5,
+              "x_mm": 449.99999999999994
+            }
+          ]
+        }
+      },
+      "A2_4th_harmonic_layer_shift_mm_per_1pct": null,
+      "note": "Channel plan is illustrative: (n+1/2) x f_c,alpha at B0, between alpha harmonics where IBW branches exist."
+    },
+    "caveats": [
+      "Slowing-down uses the expected (mean) Rosenbluth drag of PARC-Delta v1.6 with fixed Maxwellian electron/proton reservoirs; no boron, impurities or neutrals.",
+      "Cross-section 1.2 b is an approximate resonance value (assumption); the budget conclusion holds for any value within 10x."
+    ]
+  },
+  "reproducibility": {
+    "files": [
+      {
+        "file": "v16_full_mixture_energy_deposition.csv",
+        "values": 12,
+        "max_rel_diff": 2.0660772458105103e-14
+      },
+      {
+        "file": "v16_full_mixture_slowing_history.csv",
+        "values": 154,
+        "max_rel_diff": 4.989140578897804e-13
+      },
+      {
+        "file": "v16_full_mixture_ta_nanbu_rosenbluth_comparison.csv",
+        "values": 34,
+        "max_rel_diff": 1.0757525363809096e-12
+      },
+      {
+        "file": "v16_mc_particle_number_convergence.csv",
+        "values": 72,
+        "max_rel_diff": 3.8149835671149514e-13
+      },
+      {
+        "file": "v16_multispecies_subcycling_sensitivity.csv",
+        "values": 90,
+        "max_rel_diff": 0.0
+      },
+      {
+        "file": "v16_multispecies_timestep_convergence.csv",
+        "values": 56,
+        "max_rel_diff": 3.127405397445345e-13
+      },
+      {
+        "file": "v16_rosenbluth_timestep_convergence.csv",
+        "values": 27,
+        "max_rel_diff": 9.114614598768735e-14
+      },
+      {
+        "file": "v16_slowing_down_and_collision_validation.json",
+        "values": 280,
+        "max_rel_diff": 7.51714359789512e-10
+      },
+      {
+        "file": "v16_source_and_coulomb_log_sensitivity.csv",
+        "values": 162,
+        "max_rel_diff": 8.823247821919919e-13
+      },
+      {
+        "file": "v16_ta_nanbu_rosenbluth_comparison.csv",
+        "values": 187,
+        "max_rel_diff": 3.2166868589637377e-15
+      },
+      {
+        "file": "v16_timestep_convergence.csv",
+        "values": 48,
+        "max_rel_diff": 7.63382176380494e-13
+      }
+    ],
+    "file_count": 11,
+    "values_compared": 1122,
+    "max_rel_diff": 7.51714359789512e-10
+  },
+  "cad": {
+    "part_count": 150,
+    "overall_mm": [
+      6880,
+      3200,
+      2420
+    ]
+  },
+  "tests": [
+    {
+      "id": "T1",
+      "area": "Software",
+      "what": "PARC-Delta v1.6 unit + regression suite (pytest)",
+      "how": "76 automated tests run on a clean Python 3.12 toolchain on the external SSD",
+      "result": "76 / 76 passed in 13 s",
+      "status": "pass"
+    },
+    {
+      "id": "T2",
+      "area": "Reproducibility",
+      "what": "Re-run of the full v1.6 numerical campaign",
+      "how": "scripts_run_v16.py re-executed in an isolated copy; 1122 numbers in 11 result files compared to the shipped release",
+      "result": "max relative difference 7.5e-10 (floating-point level)",
+      "status": "pass"
+    },
+    {
+      "id": "T3",
+      "area": "Physics (inherited)",
+      "what": "Collision-operator cross-checks (v1.5/v1.6 release)",
+      "how": "Landau–Spitzer analytic moment; single-bath and full-mixture TA/Nanbu vs Rosenbluth",
+      "result": "single bath agrees to <0.003%; full mixture still captures only 92.9% / 93.9% of energy loss",
+      "status": "open"
+    },
+    {
+      "id": "T4",
+      "area": "Magnet",
+      "what": "HTS coil set field, mirror ratio, stored energy, conductor field",
+      "how": "magpylib analytic loops (8×10 filaments per coil); 2×2 current solve; inductance-matrix energy",
+      "result": "B0 3.00 T, mirror ratio 1.63, 14.2 MJ, peak winding field 10.0 T",
+      "status": "design change"
+    },
+    {
+      "id": "T5",
+      "area": "Orbit solver",
+      "what": "Boris full-orbit integrator vs adiabatic loss-cone theory",
+      "how": "4200 alphas from the PARC-Delta α0/α1 birth source, 4 µs, 0.4 ns steps",
+      "result": "simulated end loss 39.67% vs analytic loss cone 39.69%",
+      "status": "pass"
+    },
+    {
+      "id": "T6",
+      "area": "Confinement",
+      "what": "Alpha wall loss vs central field (1–4 T)",
+      "how": "coil currents scaled; limiter at r = 250 mm",
+      "result": "wall loss 76% at 1 T → 0.1% at 3 T (design point)",
+      "status": "pass"
+    },
+    {
+      "id": "T7",
+      "area": "Target",
+      "what": "Foil / target-assembly re-intersection by trapped alphas",
+      "how": "X = 0 plane crossings tracked on foil, frame ring and arm; target offset scanned 0–160 mm",
+      "result": "38% hit the target assembly within 4 µs; median first foil re-crossing 1.5 µs; offsetting trades target hits for wall hits",
+      "status": "finding"
+    },
+    {
+      "id": "T8",
+      "area": "Collisions",
+      "what": "Alpha slowing-down in the bench plasma",
+      "how": "PARC-Delta Rosenbluth expected-drag coefficients, ne = 1e19 m⁻³, Te = 10 eV, Tp = 2 eV",
+      "result": "3.1 MeV → 50 keV in 11.7 ms; 99.94% to electrons",
+      "status": "pass"
+    },
+    {
+      "id": "T9",
+      "area": "Feasibility",
+      "what": "Fast-alpha inventory vs IBW drive requirement",
+      "how": "10 µA, 1 µm ¹¹B foil, σ ≈ 1.2 b (assumed), trapped fraction and lifetimes from T5/T7/T8",
+      "result": "best case 2.3e+08 m⁻³ vs 2e+17 m⁻³ needed (~10^9× short)",
+      "status": "finding"
+    },
+    {
+      "id": "T10",
+      "area": "RF",
+      "what": "IBW channel plan and cyclotron-resonance layers",
+      "how": "simulated B(X) on axis → nΩα, nΩp, Ω(¹¹B⁵⁺); four channels at (n+½)Ωα(B0)",
+      "result": "Ωα/2π = 23.0 MHz, Ωp/2π = 45.7 MHz, f_LH = 628 MHz; channels 57.6–126.6 MHz",
+      "status": "pass"
+    },
+    {
+      "id": "T11",
+      "area": "CAD",
+      "what": "Model integrity and drawing traceability",
+      "how": "build123d solid model (STEP), CADCraft GA drawing and simulations all read one parameter file",
+      "result": "150 labelled parts, 6.9 × 3.2 × 2.4 m envelope; A0 drawing PDX1-GA-001",
+      "status": "pass"
+    }
+  ],
+  "open_questions": [
+    {
+      "topic": "Collision closure",
+      "question": "Why do TA/Nanbu still miss 6–7% of the Rosenbluth alpha energy loss at 32 substeps, and does importance sampling of near-comoving electrons close it?"
+    },
+    {
+      "topic": "Trapped-alpha accumulation",
+      "question": "An on-axis foil re-intersects ~38% of trapped alphas within 4 µs. Pulsed or retractable targets, or a gas/pellet boron target, are needed to build a trapped population."
+    },
+    {
+      "topic": "Alpha drive",
+      "question": "Fusion alphas from a µA beam are ~10⁹× too sparse for IBW self-excitation. What surrogate energetic-ion source reaches n_fast/n_p ≈ 1% at bench scale?"
+    },
+    {
+      "topic": "Coherent vs irreversible",
+      "question": "How will PDX-1 separate coherent proton response from irreversible proton heating (Gate 4)? Candidate: RFEA/CX energy distributions with RF on/off modulation."
+    },
+    {
+      "topic": "Nonlinear physics",
+      "question": "Does the multi-mode advantage survive nonlinear saturation and mode coupling? Requires a PIC benchmark (Gate 3) before any control-law claim."
+    },
+    {
+      "topic": "Magnet engineering",
+      "question": "REBCO mirror coils see ~10 T and a ~170 MPa J×B×R screen; quench protection, structure and cost need FEA and vendor input."
+    },
+    {
+      "topic": "Bench electron dominance",
+      "question": "At Te = 10 eV, 99.9% of alpha energy goes to electrons. Which bench parameters make the α→p channel measurable against this baseline?"
+    },
+    {
+      "topic": "Source validation",
+      "question": "Can the Si spectrometer resolve the α0/α1 branch structure to validate the sequential-kinematic source (an open Gate 2 item)?"
+    },
+    {
+      "topic": "Radiation safety",
+      "question": "Alphas striking boron produce neutrons via ¹¹B(α,n)¹⁴N; shielding and licensing need a dose assessment even at µA currents."
+    },
+    {
+      "topic": "Foil survival",
+      "question": "≤6.75 W of beam power on a 1 µm foil: thermal survival, sputtering and 11B enrichment supply need testing."
+    }
+  ],
+  "release_v16": {
+    "tests": 76,
+    "alpha_final_mean_kev": [
+      15.303,
+      14.734
+    ],
+    "deposition_electron_pct": 73,
+    "deposition_proton_pct": [
+      26,
+      27
+    ],
+    "deposition_thermal_alpha_pct": 0.6,
+    "ta_nanbu_k32_energy_capture_pct": [
+      92.89,
+      93.88
+    ]
+  }
+}

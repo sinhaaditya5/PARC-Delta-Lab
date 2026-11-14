@@ -1,0 +1,65 @@
+{
+  "design": "PDX-1 concept coil set (2 mirror + 6 main REBCO HTS coils, conduction-cooled at 20 K)",
+  "amp_turns_per_main_coil": 666416.7205443529,
+  "amp_turns_per_mirror_coil": 2793639.61798767,
+  "engineering_current_density_main_A_mm2": 55.53472671202941,
+  "engineering_current_density_mirror_A_mm2": 142.53263357079948,
+  "B0_on_axis_T": 3.000000000000001,
+  "B_max_on_axis_T": 4.879609523969332,
+  "mirror_throat_position_m": 0.9900000000000002,
+  "mirror_ratio": 1.626536507989777,
+  "peak_field_at_conductor_T": 9.977292117610281,
+  "stored_magnetic_energy_MJ": 14.185331534472924,
+  "hoop_stress_estimate_MPa": {
+    "M3": 38.72852795687746,
+    "MR-R": 170.4852555570234
+  },
+  "winding_surface_field_T": {
+    "MR-L": {
+      "Bz_inner": 9.8519687616012,
+      "Bz_outer": -4.535907253878269,
+      "Bmax_surface": 9.977292117610274
+    },
+    "M1": {
+      "Bz_inner": 4.586912090085324,
+      "Bz_outer": -0.47461690244769494,
+      "Bmax_surface": 4.732585620600408
+    },
+    "M2": {
+      "Bz_inner": 4.074131907245453,
+      "Bz_outer": -0.6301919738995537,
+      "Bmax_surface": 4.139072272022945
+    },
+    "M3": {
+      "Bz_inner": 3.943937472057398,
+      "Bz_outer": -0.700332995428103,
+      "Bmax_surface": 4.003077713650146
+    },
+    "M4": {
+      "Bz_inner": 3.943937472057403,
+      "Bz_outer": -0.700332995428102,
+      "Bmax_surface": 4.003077713650141
+    },
+    "M5": {
+      "Bz_inner": 4.074131907245457,
+      "Bz_outer": -0.6301919738995532,
+      "Bmax_surface": 4.139072272022936
+    },
+    "M6": {
+      "Bz_inner": 4.586912090085329,
+      "Bz_outer": -0.4746169024476931,
+      "Bmax_surface": 4.7325856206003944
+    },
+    "MR-R": {
+      "Bz_inner": 9.851968761601206,
+      "Bz_outer": -4.535907253878278,
+      "Bmax_surface": 9.977292117610281
+    }
+  },
+  "method": "magpylib analytic loops, 8x10 filaments per winding pack",
+  "caveats": [
+    "Hoop stress is a J*B*R screening estimate without structural credit; needs FEA.",
+    "Field map ignores iron, leads, joints and coil-case eddy currents.",
+    "Design iteration: the first pass assumed NbTi at 4.2 K; the ~10 T mirror-coil winding field exceeds practical NbTi margins, so the baseline was changed to REBCO HTS at 20 K."
+  ]
+}
