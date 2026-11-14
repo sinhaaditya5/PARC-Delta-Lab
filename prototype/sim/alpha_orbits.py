@@ -33,7 +33,7 @@ from scipy.constants import e, physical_constants
 HERE = Path(__file__).resolve().parent
 LAB = HERE.parents[1]
 sys.path.insert(0, str(HERE.parent / "design"))
-sys.path.insert(0, str(LAB / "PARC-Delta-v1.6" / "src"))
+sys.path.insert(0, str(LAB / "parc-delta" / "src"))
 import pdx1_params as P  # noqa: E402
 from plotstyle import apply_style, COLORS  # noqa: E402
 from parc_delta_v10.pb11_alpha_source import (  # noqa: E402
