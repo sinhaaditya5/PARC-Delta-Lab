@@ -374,7 +374,11 @@ def build():
 
 def main():
     build()
-    cli = shutil.which("cadcraft-cli") or str(HERE.parents[2] / "tools/cadcraft/target/release/cadcraft-cli")
+    # Resolution order: $CADCRAFT_CLI, cadcraft-cli on PATH, then a local build in <repo>/tools.
+    cli = (os.environ.get("CADCRAFT_CLI") or shutil.which("cadcraft-cli")
+           or str(HERE.parents[1] / "tools/cadcraft/target/release/cadcraft-cli"))
+    if not Path(cli).exists():
+        sys.exit(f"cadcraft-cli not found ({cli}). Build CADCraft and set CADCRAFT_CLI; see docs/REPRODUCIBILITY.md.")
     dxf, png, pdf = OUT / "PDX1-GA-001.dxf", OUT / "PDX1-GA-001.png", OUT / "PDX1-GA-001.pdf"
     args = [cli, "run", "--metric"]
     for c in CMDS:
