@@ -1,0 +1,107 @@
+{
+  "release": "1.5.0-research",
+  "benchmark": "proton-alpha Maxwellian Landau-Spitzer initial temperature equilibration",
+  "model_scope": "instantaneous pairwise Landau energy-exchange moment; not a time-integrated collision trajectory",
+  "parameters": {
+    "proton_density_m3": 1e+20,
+    "alpha_density_m3": 1e+20,
+    "proton_initial_temperature_ev": 100.0,
+    "alpha_initial_temperature_ev": 10.0,
+    "coulomb_logarithm_fixed": 11.5,
+    "proton_mass_kg": 1.67262192595e-27,
+    "alpha_mass_kg": 6.644657345e-27
+  },
+  "rows": [
+    {
+      "particles_per_species": 128,
+      "proton_temperature_ev": 91.48438010296287,
+      "alpha_temperature_ev": 9.180090926519316,
+      "pairwise_landau_power_w_m3": -363061534.88994306,
+      "landau_spitzer_power_w_m3": -342022417.8286939,
+      "relative_error": 0.06151385395967476,
+      "energy_closure_relative": 6.566891730181103e-16,
+      "pair_count": 16384,
+      "coulomb_logarithm": 11.5
+    },
+    {
+      "particles_per_species": 256,
+      "proton_temperature_ev": 96.72479264296895,
+      "alpha_temperature_ev": 9.609911876249011,
+      "pairwise_landau_power_w_m3": -348705467.3422852,
+      "landau_spitzer_power_w_m3": -333117143.7534493,
+      "relative_error": 0.046795320748707285,
+      "energy_closure_relative": 3.418624045655321e-16,
+      "pair_count": 65536,
+      "coulomb_logarithm": 11.5
+    },
+    {
+      "particles_per_species": 512,
+      "proton_temperature_ev": 100.37601055087515,
+      "alpha_temperature_ev": 10.007629044534903,
+      "pairwise_landau_power_w_m3": -341545727.88721365,
+      "landau_spitzer_power_w_m3": -326834010.576763,
+      "relative_error": 0.04501281027788066,
+      "energy_closure_relative": 5.235431736543939e-16,
+      "pair_count": 262144,
+      "coulomb_logarithm": 11.5
+    },
+    {
+      "particles_per_species": 768,
+      "proton_temperature_ev": 97.52150725925372,
+      "alpha_temperature_ev": 10.089692900687362,
+      "pairwise_landau_power_w_m3": -334196851.5909213,
+      "landau_spitzer_power_w_m3": -329741298.4925962,
+      "relative_error": 0.013512268917158753,
+      "energy_closure_relative": 7.134076158006491e-16,
+      "pair_count": 589824,
+      "coulomb_logarithm": 11.5
+    },
+    {
+      "particles_per_species": 1024,
+      "proton_temperature_ev": 99.56478266143351,
+      "alpha_temperature_ev": 10.162985124232577,
+      "pairwise_landau_power_w_m3": -327886488.7744605,
+      "landau_spitzer_power_w_m3": -327012093.67994505,
+      "relative_error": 0.0026738922242161333,
+      "energy_closure_relative": 5.4535316473247715e-16,
+      "pair_count": 1048576,
+      "coulomb_logarithm": 11.5
+    },
+    {
+      "particles_per_species": 1536,
+      "proton_temperature_ev": 99.04098168278828,
+      "alpha_temperature_ev": 9.985462449445734,
+      "pairwise_landau_power_w_m3": -335131976.4732026,
+      "landau_spitzer_power_w_m3": -328484522.23446083,
+      "relative_error": 0.0202367350325171,
+      "energy_closure_relative": 7.114169814846857e-16,
+      "pair_count": 2359296,
+      "coulomb_logarithm": 11.5
+    },
+    {
+      "particles_per_species": 2048,
+      "proton_temperature_ev": 100.37860477307552,
+      "alpha_temperature_ev": 10.085473464870674,
+      "pairwise_landau_power_w_m3": -326999284.78612447,
+      "landau_spitzer_power_w_m3": -326456247.1410385,
+      "relative_error": 0.0016634316232012022,
+      "energy_closure_relative": 3.645551996505151e-16,
+      "pair_count": 4194304,
+      "coulomb_logarithm": 11.5
+    }
+  ],
+  "best_relative_error": {
+    "particles_per_species": 2048,
+    "proton_temperature_ev": 100.37860477307552,
+    "alpha_temperature_ev": 10.085473464870674,
+    "pairwise_landau_power_w_m3": -326999284.78612447,
+    "landau_spitzer_power_w_m3": -326456247.1410385,
+    "relative_error": 0.0016634316232012022,
+    "energy_closure_relative": 3.645551996505151e-16,
+    "pair_count": 4194304,
+    "coulomb_logarithm": 11.5
+  },
+  "largest_particle_count_relative_error": 0.0016634316232012022,
+  "largest_particle_count_energy_closure_relative": 3.645551996505151e-16,
+  "interpretation": "Convergence of the discrete Landau energy-exchange moment toward the analytic Maxwellian Landau-Spitzer rate. Does not establish long-time stochastic orbit accuracy, an H theorem, or a complete collision operator."
+}
