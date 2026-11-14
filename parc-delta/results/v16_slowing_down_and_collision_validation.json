@@ -1,0 +1,406 @@
+{
+  "alpha_population_density_m3": 2e+18,
+  "backgrounds": [
+    {
+      "charge_c": -1.602176634e-19,
+      "density_m3": 1.04e+20,
+      "mass_kg": 9.1093837139e-31,
+      "name": "electron",
+      "temperature_ev": 10000.0
+    },
+    {
+      "charge_c": 1.602176634e-19,
+      "density_m3": 1e+20,
+      "mass_kg": 1.67262192595e-27,
+      "name": "proton",
+      "temperature_ev": 10000.0
+    },
+    {
+      "charge_c": 3.204353268e-19,
+      "density_m3": 2e+18,
+      "mass_kg": 6.644657345e-27,
+      "name": "thermal_alpha",
+      "temperature_ev": 10000.0
+    }
+  ],
+  "beam_energy_lab_mev": 0.675,
+  "branch_note": "alpha0 and alpha1 are separate unweighted branch cases; no branching fractions are assumed.",
+  "coulomb_logarithm": 15.0,
+  "entrance_cm_energy_mev": 0.6183888798350381,
+  "full_mixture_collision_method_comparison": {
+    "dt_s": 5e-05,
+    "duration_s": 0.01,
+    "field_densities_m3": {
+      "electron": 1.04e+20,
+      "proton": 1e+20,
+      "thermal_alpha": 2e+18
+    },
+    "field_species": [
+      "electron",
+      "proton",
+      "thermal_alpha"
+    ],
+    "field_temperatures_ev": {
+      "electron": 10000.0,
+      "proton": 10000.0,
+      "thermal_alpha": 10000.0
+    },
+    "final_mean_energy_ev_by_method": {
+      "nanbu": 2972063.917688864,
+      "rosenbluth_langevin": 2957205.2333408967,
+      "takizuka_abe": 2979265.7061019912
+    },
+    "initial_mean_energy_ev": 3113176.1410336145,
+    "marker_count": 384,
+    "note": "Three fixed Maxwellian test-particle baths (electrons, protons, thermal alphas); backgrounds do not back-react.",
+    "operator_split": "symmetric forward/reverse half-step composition; each bath receives total dt",
+    "relative_final_mean_energy_difference_vs_rosenbluth": {
+      "nanbu": 0.005024569881198466,
+      "rosenbluth_langevin": 0.0,
+      "takizuka_abe": 0.0074599058977627315
+    },
+    "steps": 200,
+    "substeps_per_species_per_half_pass": 16
+  },
+  "full_mixture_slows_down": {
+    "alpha0": {
+      "snapshots": [
+        {
+          "max_speed_over_c": 0.06047320303707953,
+          "mean_energy_ev": 3113168.9432882704,
+          "mean_speed_m_s": 11557220.258786405,
+          "median_energy_ev": 1865929.222058725,
+          "q05_energy_ev": 1088832.420647483,
+          "q95_energy_ev": 6581979.365610383,
+          "time_s": 0.0
+        },
+        {
+          "max_speed_over_c": 0.04990341906674897,
+          "mean_energy_ev": 1783760.0859194368,
+          "mean_speed_m_s": 8579683.552903753,
+          "median_energy_ev": 991520.7927186117,
+          "q05_energy_ev": 431568.35116408515,
+          "q95_energy_ev": 4044062.218219602,
+          "time_s": 0.1
+        },
+        {
+          "max_speed_over_c": 0.039171017027793124,
+          "mean_energy_ev": 903009.5233582155,
+          "mean_speed_m_s": 5515623.636754485,
+          "median_energy_ev": 406445.9598272233,
+          "q05_energy_ev": 8617.201392516814,
+          "q95_energy_ev": 2466509.75796125,
+          "time_s": 0.2
+        },
+        {
+          "max_speed_over_c": 0.030644841068280606,
+          "mean_energy_ev": 422410.95994170505,
+          "mean_speed_m_s": 3196846.719220096,
+          "median_energy_ev": 26640.48362756764,
+          "q05_energy_ev": 2910.616293890236,
+          "q95_energy_ev": 1422601.5862932783,
+          "time_s": 0.3
+        },
+        {
+          "max_speed_over_c": 0.02368982631835631,
+          "mean_energy_ev": 191336.1949674966,
+          "mean_speed_m_s": 2214433.427665017,
+          "median_energy_ev": 20974.283494795625,
+          "q05_energy_ev": 2562.6291085998632,
+          "q95_energy_ev": 709219.1046141596,
+          "time_s": 0.4
+        },
+        {
+          "max_speed_over_c": 0.017377961937038895,
+          "mean_energy_ev": 36828.17470140852,
+          "mean_speed_m_s": 1067273.7931920139,
+          "median_energy_ev": 15125.366817333994,
+          "q05_energy_ev": 2082.0565827945675,
+          "q95_energy_ev": 191492.1076021261,
+          "time_s": 0.5
+        },
+        {
+          "max_speed_over_c": 0.007375223428388712,
+          "mean_energy_ev": 15618.428491996596,
+          "mean_speed_m_s": 800812.0765470524,
+          "median_energy_ev": 12244.173548813524,
+          "q05_energy_ev": 1956.0238874205947,
+          "q95_energy_ev": 39663.417374610704,
+          "time_s": 0.6
+        },
+        {
+          "max_speed_over_c": 0.006585132347877325,
+          "mean_energy_ev": 15299.667960815887,
+          "mean_speed_m_s": 787271.21866947,
+          "median_energy_ev": 11667.544827352067,
+          "q05_energy_ev": 1738.1437276690056,
+          "q95_energy_ev": 41619.31520254195,
+          "time_s": 0.7000000000000001
+        },
+        {
+          "max_speed_over_c": 0.007284756514486442,
+          "mean_energy_ev": 14795.103088425452,
+          "mean_speed_m_s": 777075.5106959433,
+          "median_energy_ev": 11735.658447673068,
+          "q05_energy_ev": 1768.9584061376956,
+          "q95_energy_ev": 39104.65276129474,
+          "time_s": 0.8
+        },
+        {
+          "max_speed_over_c": 0.007217013281179814,
+          "mean_energy_ev": 15148.976548776647,
+          "mean_speed_m_s": 787318.1076505532,
+          "median_energy_ev": 12027.011540850282,
+          "q05_energy_ev": 1675.4177291668586,
+          "q95_energy_ev": 39947.456961945834,
+          "time_s": 0.9
+        },
+        {
+          "max_speed_over_c": 0.006777520877608086,
+          "mean_energy_ev": 15302.83814982869,
+          "mean_speed_m_s": 791289.2534709969,
+          "median_energy_ev": 11993.448291855173,
+          "q05_energy_ev": 1795.869204867936,
+          "q95_energy_ev": 39365.8993637035,
+          "time_s": 1.0
+        }
+      ],
+      "solver": {
+        "actual_alpha_energy_change_j_m3": -992665.7377826795,
+        "deposited_energy_j_m3_by_field_species": {
+          "electron": 728534.5823058888,
+          "proton": 261552.58985478966,
+          "thermal_alpha": 6030.789719772118
+        },
+        "dt_s": 0.0001,
+        "energy_budget_residual_j_m3": 3452.2240977711044,
+        "expected_alpha_energy_change_j_m3": -996117.9618804506,
+        "final_energy_density_j_m3": 4903.569943507863,
+        "final_power_density_w_m3_by_field_species": {
+          "electron": 593.7386452912534,
+          "proton": 19600.38785475851,
+          "thermal_alpha": 2143.5069052146046
+        },
+        "initial_energy_density_j_m3": 997569.3077261874,
+        "initial_power_density_w_m3_by_field_species": {
+          "electron": 4754341.475184088,
+          "proton": 463992.1255013264,
+          "thermal_alpha": 9343.848596817224
+        },
+        "marker_count": 1536,
+        "max_dt_k_guard": 0.02,
+        "relative_energy_budget_residual": 0.0034656779918455323,
+        "steps": 10000
+      },
+      "source": {
+        "alpha_count": 1536,
+        "channel": "alpha0",
+        "energy_max_mev": 6.834279180965041,
+        "energy_mean_mev": 3.1189626475903762,
+        "energy_min_mev": 0.8048392607438473,
+        "energy_q05_mev": 1.0893097534125218,
+        "energy_q50_mev": 1.8673315213884507,
+        "energy_q95_mev": 6.599464981244296,
+        "energy_std_mev": 2.1674781412539246,
+        "events": 512,
+        "mean_pitch_cosine": 0.07134249536602755,
+        "mean_total_alpha_energy_per_event_mev": 9.35688794277113
+      },
+      "source_nonrelativistic_audit": {
+        "max_relative_kinetic_energy_difference": 0.0027435936028588925,
+        "max_speed_over_c": 0.06047320303707953,
+        "mean_relative_kinetic_energy_difference": 0.0012530836131409674,
+        "source_mean_nonrelativistic_energy_mev": 3.11316894328827,
+        "source_mean_relativistic_energy_mev": 3.1189626475903762
+      }
+    },
+    "alpha1": {
+      "snapshots": [
+        {
+          "max_speed_over_c": 0.05877536019491036,
+          "mean_energy_ev": 3114183.321164655,
+          "mean_speed_m_s": 11790468.5016518,
+          "median_energy_ev": 3326426.6573490496,
+          "q05_energy_ev": 544998.6439400206,
+          "q95_energy_ev": 5212994.014091784,
+          "time_s": 0.0
+        },
+        {
+          "max_speed_over_c": 0.04870006594938889,
+          "mean_energy_ev": 1796250.5066709777,
+          "mean_speed_m_s": 8768914.898329524,
+          "median_energy_ev": 1927360.5358517542,
+          "q05_energy_ev": 47140.534228989156,
+          "q95_energy_ev": 3169752.9028149457,
+          "time_s": 0.1
+        },
+        {
+          "max_speed_over_c": 0.03776933854331163,
+          "mean_energy_ev": 951382.9041162502,
+          "mean_speed_m_s": 6144932.896051391,
+          "median_energy_ev": 1017267.7585753344,
+          "q05_energy_ev": 8342.053259179756,
+          "q95_energy_ev": 1894136.6452624109,
+          "time_s": 0.2
+        },
+        {
+          "max_speed_over_c": 0.02832522112889038,
+          "mean_energy_ev": 420807.2057039726,
+          "mean_speed_m_s": 3807779.5807173997,
+          "median_energy_ev": 403359.7617305771,
+          "q05_energy_ev": 4299.017145039735,
+          "q95_energy_ev": 1066409.8140214023,
+          "time_s": 0.3
+        },
+        {
+          "max_speed_over_c": 0.02001069572283286,
+          "mean_energy_ev": 106243.51966311173,
+          "mean_speed_m_s": 1731359.1895513304,
+          "median_energy_ev": 23803.046214267302,
+          "q05_energy_ev": 2189.944543731597,
+          "q95_energy_ev": 456954.6188724276,
+          "time_s": 0.4
+        },
+        {
+          "max_speed_over_c": 0.016283044240027293,
+          "mean_energy_ev": 17885.36220760435,
+          "mean_speed_m_s": 838107.6349432577,
+          "median_energy_ev": 12932.478412718443,
+          "q05_energy_ev": 2244.4107826198947,
+          "q95_energy_ev": 42466.491226619124,
+          "time_s": 0.5
+        },
+        {
+          "max_speed_over_c": 0.0068043428244466565,
+          "mean_energy_ev": 15175.79244506889,
+          "mean_speed_m_s": 787352.9284906149,
+          "median_energy_ev": 12272.78458725052,
+          "q05_energy_ev": 1606.6632283823487,
+          "q95_energy_ev": 39170.392234153536,
+          "time_s": 0.6
+        },
+        {
+          "max_speed_over_c": 0.007195831459417498,
+          "mean_energy_ev": 14968.870540963311,
+          "mean_speed_m_s": 783410.6802224593,
+          "median_energy_ev": 12076.56893727939,
+          "q05_energy_ev": 1757.1065535452417,
+          "q95_energy_ev": 36783.183615525624,
+          "time_s": 0.7000000000000001
+        },
+        {
+          "max_speed_over_c": 0.006570040302043027,
+          "mean_energy_ev": 14909.642427271525,
+          "mean_speed_m_s": 780469.7451027945,
+          "median_energy_ev": 11452.347741805348,
+          "q05_energy_ev": 1598.121614674696,
+          "q95_energy_ev": 39641.21334772993,
+          "time_s": 0.8
+        },
+        {
+          "max_speed_over_c": 0.0065439553117209465,
+          "mean_energy_ev": 15067.107603609424,
+          "mean_speed_m_s": 784360.889844919,
+          "median_energy_ev": 11927.889796426944,
+          "q05_energy_ev": 1736.5040006406052,
+          "q95_energy_ev": 38493.405713809334,
+          "time_s": 0.9
+        },
+        {
+          "max_speed_over_c": 0.007556843388440527,
+          "mean_energy_ev": 14733.7161469501,
+          "mean_speed_m_s": 775759.0515140337,
+          "median_energy_ev": 11634.056478244936,
+          "q05_energy_ev": 1803.5804472568962,
+          "q95_energy_ev": 37903.36354989056,
+          "time_s": 1.0
+        }
+      ],
+      "solver": {
+        "actual_alpha_energy_change_j_m3": -993173.1470839792,
+        "deposited_energy_j_m3_by_field_species": {
+          "electron": 725087.4888001053,
+          "proton": 266669.5478842135,
+          "thermal_alpha": 6179.030235543035
+        },
+        "dt_s": 0.0001,
+        "energy_budget_residual_j_m3": 4762.919835882611,
+        "expected_alpha_energy_change_j_m3": -997936.0669198618,
+        "final_energy_density_j_m3": 4721.203148526392,
+        "final_power_density_w_m3_by_field_species": {
+          "electron": -323.8881072808272,
+          "proton": -10611.635173318411,
+          "thermal_alpha": -1095.5548501242806
+        },
+        "initial_energy_density_j_m3": 997894.3502325056,
+        "initial_power_density_w_m3_by_field_species": {
+          "electron": 4786879.924999756,
+          "proton": 465075.1458562026,
+          "thermal_alpha": 9472.072053982689
+        },
+        "marker_count": 1536,
+        "max_dt_k_guard": 0.02,
+        "relative_energy_budget_residual": 0.004772770514832081,
+        "steps": 10000
+      },
+      "source": {
+        "alpha_count": 1536,
+        "channel": "alpha1",
+        "energy_max_mev": 6.454925099442335,
+        "energy_mean_mev": 3.1189626475906036,
+        "energy_min_mev": 0.03289848073336543,
+        "energy_q05_mev": 0.5451182051980368,
+        "energy_q50_mev": 3.3308862029950888,
+        "energy_q95_mev": 5.223955661186096,
+        "energy_std_mev": 1.4717681537453913,
+        "events": 512,
+        "mean_pitch_cosine": 0.0680736260593622,
+        "mean_total_alpha_energy_per_event_mev": 9.356887942771811
+      },
+      "source_nonrelativistic_audit": {
+        "max_relative_kinetic_energy_difference": 0.0025916543823302227,
+        "max_speed_over_c": 0.05877536019491036,
+        "mean_relative_kinetic_energy_difference": 0.0012534465703520218,
+        "source_mean_nonrelativistic_energy_mev": 3.114183321164655,
+        "source_mean_relativistic_energy_mev": 3.1189626475906036
+      }
+    }
+  },
+  "independent_collision_method_comparison": {
+    "dt_s": 5e-05,
+    "duration_s": 0.05,
+    "field_density_m3": 1e+20,
+    "field_species": "proton",
+    "field_temperature_ev": 1.0,
+    "final_mean_energy_ev_by_method": {
+      "nanbu": 3040049.4242118467,
+      "rosenbluth_langevin": 3040036.415430766,
+      "takizuka_abe": 3040120.4676638325
+    },
+    "initial_mean_energy_ev": 3113176.1410336145,
+    "marker_count": 384,
+    "note": "Test-particle comparison against a fixed cold Maxwellian proton bath; TA and Nanbu are independently sampled pair-scattering updates.",
+    "relative_final_mean_energy_difference_vs_rosenbluth": {
+      "nanbu": 4.279153043881075e-06,
+      "rosenbluth_langevin": 0.0,
+      "takizuka_abe": 2.7648429683201614e-05
+    },
+    "steps": 1000
+  },
+  "model": "non-relativistic test-particle Rosenbluth/Langevin solver with fixed Maxwellian reservoirs",
+  "numerical_controls": {
+    "TA_Nanbu_marker_count_replicates": 12,
+    "alpha_marker_count_per_channel": 1536,
+    "full_mixture_dt_s": 0.0001,
+    "full_mixture_duration_s": 1.0,
+    "full_mixture_ln_lambda": 15.0,
+    "full_mixture_steps": 10000,
+    "full_mixture_timestep_convergence_cases": 3,
+    "illustrative_alpha_population_density_m3": 2e+18,
+    "multispecies_collision_timestep_cases": 8,
+    "nonrelativistic_boundary": "alpha marker speeds checked against 0.1c; source-energy relativistic discrepancy reported",
+    "source_model": "v1.4 branch-resolved sequential kinematics, alpha0 and alpha1 kept separate; no branch weights"
+  },
+  "scope_note": "Test particles do not back-react on fixed Maxwellian backgrounds. Deposited powers are expected Landau moments, not self-consistent background heating.",
+  "version": "1.6.0-research"
+}
