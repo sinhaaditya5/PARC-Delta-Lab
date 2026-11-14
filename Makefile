@@ -23,7 +23,7 @@ PROTO := prototype
 .DEFAULT_GOAL := help
 .PHONY: help install install-dev check lint verify test cli-smoke rerun \
         sims magnet orbits bench cad drawing renders turntable diagrams report docs video \
-        assets all clean
+        regress assets all clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) | \
@@ -95,6 +95,9 @@ docs: report diagrams ## Test report (.docx) and deck (.pptx)
 
 video: report diagrams turntable ## Narrated explainer (macOS: needs `say`)
 	cd $(PROTO)/video && "$(PYTHON)" make_video.py
+
+regress: ## Compare regenerated results with deliverables/data (after sims, rerun, report)
+	"$(PYTHON)" scripts/check_results.py --rerun-max 1e-6
 
 assets: ## Regenerate README imagery in docs/assets from pipeline outputs
 	"$(PYTHON)" scripts/make_readme_assets.py
