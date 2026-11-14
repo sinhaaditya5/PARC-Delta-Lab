@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:14,283
+This is P D X one: a concept test stand for the PARC Delta research programme on proton boron eleven fusion and alpha channeling. Everything you will see was designed, simulated and rendered from one shared set of parameters.
+
+2
+00:00:14,783 --> 00:00:31,719
+P D X one is a six point nine metre linear mirror. A seven hundred kilovolt accelerator fires six hundred and seventy five kilo electron volt protons through a helicon plasma source, onto a one micron boron eleven foil at the centre of a three tesla superconducting magnet.
+
+3
+00:00:32,219 --> 00:00:46,980
+The central cell has two mirror coils and six main coils, all high temperature superconductor at twenty kelvin, four Faraday shielded ion Bernstein wave antennas, and diagnostics for alpha particles, waves and proton heating.
+
+4
+00:00:47,480 --> 00:01:01,049
+Inside, each fusion reaction makes three alpha particles. The orange orbits are not artwork. They are simulated trajectories from the PARC Delta birth source model, pushed through the simulated magnetic field.
+
+5
+00:01:01,549 --> 00:01:17,283
+The magnet simulation gives three point zero tesla at the centre and a mirror ratio of one point six three. It also flagged about ten tesla on the mirror windings, beyond practical niobium titanium margins, so the design moved to REBCO.
+
+6
+00:01:17,783 --> 00:01:28,862
+The orbit solver was checked against theory. Alphas inside the magnetic loss cone escape, and the simulated end loss of thirty nine point seven percent matches the analytic prediction.
+
+7
+00:01:29,362 --> 00:01:38,552
+Scanning the field shows why three tesla was chosen. Wall losses fall from seventy six percent at one tesla to about zero point one percent.
+
+8
+00:01:39,052 --> 00:01:58,420
+The simulations also told us something important. An on axis foil re intersects many trapped alphas within microseconds, and a microamp beam makes roughly a billion times too few alphas to drive the waves on their own. So phase one measures the birth spectrum, and phase two needs a surrogate energetic ion source.
+
+9
+00:01:58,920 --> 00:02:15,003
+The four antenna channels, from fifty seven to one hundred and twenty seven megahertz, sit between alpha cyclotron harmonics. Because the field varies along the axis, retuning a channel moves its resonance layer. That is the actuator for the scheduler.
+
+10
+00:02:15,503 --> 00:02:30,018
+The hypothesis under test is that a distribution aware scheduler, which senses, estimates, decides and acts every cycle, can steer more alpha energy into protons than a fixed wave baseline, with the same R F budget.
+
+11
+00:02:30,518 --> 00:02:41,028
+This is the baseline to beat. In a reactor like plasma, about seventy three percent of alpha energy goes to electrons. At bench temperature, nearly all of it.
+
+12
+00:02:41,528 --> 00:02:55,167
+On the software side, all seventy six tests pass, and the full version one point six campaign reproduced to better than one part in a billion. The nonlinear and irreversible heating gates remain open, and we say so.
+
+13
+00:02:55,667 --> 00:03:04,136
+The general arrangement drawing was generated in CAD Craft from the same parameters, alongside a STEP model ready for engineering review.
+
+14
+00:03:04,636 --> 00:03:15,747
+Next: close the collision gap, build the magnet and beam target stage, then test the scheduler against fair baselines. Each phase has a falsifiable exit test.
+
+15
+00:03:16,247 --> 00:03:21,781
+Every number here is simulated, and every open question is stated. Thank you.
+
