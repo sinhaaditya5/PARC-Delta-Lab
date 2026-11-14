@@ -1,0 +1,9 @@
+{
+  "v12_growth": 0.0016971465721730727,
+  "v13_zero_k_growth": 0.0016971465721730727,
+  "zero_k_residual_at_v12_root": 2.4588070002294134e-12,
+  "main_scan_rows": 36,
+  "width_scan_rows": 45,
+  "max_main_residual": 2.19232181112615e-09,
+  "max_width_residual": 7.0808472718921e-08
+}
