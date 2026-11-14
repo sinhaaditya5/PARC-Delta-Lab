@@ -1,0 +1,33 @@
+# Install with `make install-dev` (or `pre-commit install`).
+# parc-delta/ is excluded from fixers: it must stay byte-identical to SHA256SUMS.txt.
+exclude: ^parc-delta/
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.(md|srt)$
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=6000]
+      - id: mixed-line-ending
+        args: [--fix=lf]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.9
+    hooks:
+      - id: ruff
+        args: [--fix]
+
+  - repo: local
+    hooks:
+      - id: verify-parc-delta
+        name: verify parc-delta integrity
+        entry: scripts/verify_integrity.sh
+        language: script
+        pass_filenames: false
+        always_run: true
