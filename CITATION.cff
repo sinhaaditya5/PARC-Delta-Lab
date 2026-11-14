@@ -11,11 +11,11 @@ abstract: >-
   only; no claim of fusion gain or net power.
 authors:
   - given-names: "Aditya"
-    alias: "aditbytes"
+    alias: "sinhaaditya5"
 version: "1.6.0"
 date-released: "2026-11-14"
 license: MIT
-repository-code: "https://github.com/aditbytes/PARC-Delta-Lab"
+repository-code: "https://github.com/sinhaaditya5/PARC-Delta-Lab"
 keywords:
   - fusion
   - proton-boron

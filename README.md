@@ -4,9 +4,9 @@
 
 <br>
 
-[![CI](https://github.com/aditbytes/PARC-Delta-Lab/actions/workflows/ci.yml/badge.svg)](https://github.com/aditbytes/PARC-Delta-Lab/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/aditbytes/PARC-Delta-Lab/actions/workflows/codeql.yml/badge.svg)](https://github.com/aditbytes/PARC-Delta-Lab/actions/workflows/codeql.yml)
-[![Release](https://img.shields.io/github/v/release/aditbytes/PARC-Delta-Lab?color=2456c7)](https://github.com/aditbytes/PARC-Delta-Lab/releases/latest)
+[![CI](https://github.com/sinhaaditya5/PARC-Delta-Lab/actions/workflows/ci.yml/badge.svg)](https://github.com/sinhaaditya5/PARC-Delta-Lab/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/sinhaaditya5/PARC-Delta-Lab/actions/workflows/codeql.yml/badge.svg)](https://github.com/sinhaaditya5/PARC-Delta-Lab/actions/workflows/codeql.yml)
+[![Release](https://img.shields.io/github/v/release/sinhaaditya5/PARC-Delta-Lab?color=2456c7)](https://github.com/sinhaaditya5/PARC-Delta-Lab/releases/latest)
 [![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-3776AB?logo=python&logoColor=white)](parc-delta/pyproject.toml)
 [![Tests](https://img.shields.io/badge/tests-76%20passing-2e8b57)](parc-delta/tests)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -21,7 +21,7 @@ from kinetic plasma models to a fully simulated, CAD-modelled bench test stand.*
 [Architecture](#architecture) ·
 [Research model](#the-research-model-parc-delta-v16) ·
 [Deliverables](deliverables/README.md) ·
-[Release v1.6.0](https://github.com/aditbytes/PARC-Delta-Lab/releases/tag/v1.6.0)
+[Release v1.6.0](https://github.com/sinhaaditya5/PARC-Delta-Lab/releases/tag/v1.6.0)
 
 </div>
 
@@ -171,7 +171,7 @@ More detail in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 ## Quickstart
 
 ```bash
-git clone https://github.com/aditbytes/PARC-Delta-Lab.git
+git clone https://github.com/sinhaaditya5/PARC-Delta-Lab.git
 cd PARC-Delta-Lab
 python3 -m venv .venv && source .venv/bin/activate
 
