@@ -3,8 +3,13 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 const pptxgen = require("pptxgenjs");
+// Optional post-processing: set PPTX_SKILL to a directory that provides
+// scripts/apply_theme.js to restyle the saved deck. Without it the deck is
+// written with the pptxgenjs masters defined below.
 const SKILL = process.env.PPTX_SKILL;
-const { applyTheme } = require(path.join(SKILL, "scripts/apply_theme.js"));
+const applyTheme = SKILL
+  ? require(path.join(SKILL, "scripts/apply_theme.js")).applyTheme
+  : async () => {};
 
 const PROTO = path.resolve(__dirname, "..");
 const R = JSON.parse(fs.readFileSync(path.join(PROTO, "report/out/results_summary.json"), "utf8"));
