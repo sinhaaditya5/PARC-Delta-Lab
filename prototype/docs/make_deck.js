@@ -92,7 +92,7 @@ async function main() {
   // ================================================================== 1 title
   pres.addSection({ title: "Opening" });
   let s = pres.addSlide({ masterName: "TITLE_DARK", sectionTitle: "Opening" });
-  s.addImage({ path: IMG("docs/img/pdx1_hero.jpg"), x: 4.2, y: 0, w: 13.333 - 4.2 + 2.3, h: 7.5, transparency: 10, objectName: "hero render" });
+  s.addImage({ path: IMG("docs/img/pdx1_hero.jpg"), x: 4.2, y: 0, w: 13.333 - 4.2 + 2.3, h: 7.5, transparency: 10, objectName: "hero render", altText: "PDX-1 linear test stand, photoreal render" });
   s.addShape(pres.shapes.RECTANGLE, { x: 0, y: 0, w: 8.6, h: 7.5, fill: { color: C.text1, transparency: 12 }, line: { color: C.text1, transparency: 100 }, objectName: "title scrim" });
   s.addText("PARC-Delta", { placeholder: "title" });
   s.addText("PDX-1 prototype — CAD design, simulation and test results", { placeholder: "body" });
