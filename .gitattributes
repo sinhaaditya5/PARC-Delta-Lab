@@ -1,0 +1,29 @@
+# Normalise line endings for text; keep binaries untouched.
+* text=auto eol=lf
+
+*.py    text diff=python
+*.js    text
+*.md    text diff=markdown
+*.json  text
+*.csv   text
+*.toml  text
+*.yml   text
+*.sh    text eol=lf
+
+*.png   binary
+*.jpg   binary
+*.gif   binary
+*.pdf   binary
+*.dxf   binary
+*.step  binary
+*.stl   binary
+*.blend binary
+*.mp4   binary
+*.docx  binary
+*.pptx  binary
+*.npz   binary
+
+# Archived numerical output: exclude from language stats and collapse in diffs.
+parc-delta/results/**  linguist-generated=true -diff
+deliverables/data/**   linguist-generated=true
+parc-delta/legacy/**   linguist-vendored=true
