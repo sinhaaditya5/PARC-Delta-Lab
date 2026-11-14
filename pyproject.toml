@@ -1,0 +1,35 @@
+# Workspace-level tool configuration.
+#
+# The installable research package lives in parc-delta/ and has its own
+# pyproject.toml. Its sources are kept byte-identical to the 1.6.0-research
+# release (see parc-delta/SHA256SUMS.txt), so they are excluded from style
+# linting here; CI still checks them for fatal errors (syntax, undefined names).
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["parc-delta", "tools", "runs"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "W", "B", "I", "UP"]
+ignore = [
+  "E702",   # compact `a; b` statements are used deliberately in drawing/plot tables
+  "E731",   # small lambda helpers in plotting code
+  "E741",   # physics notation: I (current), l (line)
+  "B007",   # unused loop variables document tuple structure in scans
+  "B905",   # zip(strict=...) would change behaviour of existing scans
+  "UP031",  # printf-style formatting retained in a few labels
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Lambdas in the scene dispatch table are invoked immediately inside the loop,
+# so late binding of loop variables cannot occur.
+"prototype/video/make_video.py" = ["B023"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["parc_delta_v10", "pdx1_params", "plotstyle"]
+
+[tool.pytest.ini_options]
+testpaths = ["parc-delta/tests"]
+pythonpath = ["parc-delta/src"]
+addopts = "-ra"
