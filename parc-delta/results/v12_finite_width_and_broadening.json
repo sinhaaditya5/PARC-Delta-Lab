@@ -1,0 +1,318 @@
+{
+  "alpha_pole_broadening": {
+    "curves": {
+      "cv_0.000": [
+        {
+          "alpha_broadening_over_omega_p": 0.0,
+          "alpha_energy_cv": 0.0,
+          "dispersion_residual": 1.3774984408888155e-13,
+          "gamma_over_omega_p": 0.0016971465721731306,
+          "growth_fraction_of_unbroadened": 1.0,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103447207879066
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.0001,
+          "alpha_energy_cv": 0.0,
+          "dispersion_residual": 3.792939575775475e-11,
+          "gamma_over_omega_p": 0.0016478814329656643,
+          "growth_fraction_of_unbroadened": 0.9709717828647032,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103447159865007
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.0005,
+          "alpha_energy_cv": 0.0,
+          "dispersion_residual": 5.044050206388214e-09,
+          "gamma_over_omega_p": 0.0014654532469029944,
+          "growth_fraction_of_unbroadened": 0.8634806627376551,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103446970286627
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.001,
+          "alpha_energy_cv": 0.0,
+          "dispersion_residual": 1.9701679624741997e-11,
+          "gamma_over_omega_p": 0.0012692511743510166,
+          "growth_fraction_of_unbroadened": 0.7478736339936682,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103446747188056
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.002,
+          "alpha_energy_cv": 0.0,
+          "dispersion_residual": 4.958638522979287e-13,
+          "gamma_over_omega_p": 0.0009698155896895777,
+          "growth_fraction_of_unbroadened": 0.5714389114004257,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103446380594876
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.005,
+          "alpha_energy_cv": 0.0,
+          "dispersion_residual": 7.703214431662308e-13,
+          "gamma_over_omega_p": 0.00052154932100866,
+          "growth_fraction_of_unbroadened": 0.30730953328376126,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103445862393765
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.01,
+          "alpha_energy_cv": 0.0,
+          "dispersion_residual": 5.674300964624451e-13,
+          "gamma_over_omega_p": 0.0002799953685119279,
+          "growth_fraction_of_unbroadened": 0.16498007485199387,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103445679215712
+        }
+      ],
+      "cv_0.020": [
+        {
+          "alpha_broadening_over_omega_p": 0.0,
+          "alpha_energy_cv": 0.02,
+          "dispersion_residual": 2.1883235788747646e-12,
+          "gamma_over_omega_p": 0.0004861982228515612,
+          "growth_fraction_of_unbroadened": 1.0,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103465638424458
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.0001,
+          "alpha_energy_cv": 0.02,
+          "dispersion_residual": 2.7024618728287964e-09,
+          "gamma_over_omega_p": 0.0004387623336196406,
+          "growth_fraction_of_unbroadened": 0.902435083053763,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103466321168635
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.0005,
+          "alpha_energy_cv": 0.02,
+          "dispersion_residual": 6.724609170708319e-12,
+          "gamma_over_omega_p": 0.0002967067262369038,
+          "growth_fraction_of_unbroadened": 0.610258763384024,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103468690322641
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.001,
+          "alpha_energy_cv": 0.02,
+          "dispersion_residual": 1.811860342425077e-09,
+          "gamma_over_omega_p": 0.00019741485893390878,
+          "growth_fraction_of_unbroadened": 0.40603780444952503,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103470423223877
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.002,
+          "alpha_energy_cv": 0.02,
+          "dispersion_residual": 5.163374338798353e-13,
+          "gamma_over_omega_p": 0.00011192822374856243,
+          "growth_fraction_of_unbroadened": 0.23021109187133887,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103471640616417
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.005,
+          "alpha_energy_cv": 0.02,
+          "dispersion_residual": 1.0618915039956922e-12,
+          "gamma_over_omega_p": 4.6833740099136e-05,
+          "growth_fraction_of_unbroadened": 0.0963264320968828,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.510347218991591
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.01,
+          "alpha_energy_cv": 0.02,
+          "dispersion_residual": 7.442497696997642e-13,
+          "gamma_over_omega_p": 2.357267510743152e-05,
+          "growth_fraction_of_unbroadened": 0.04848367188423142,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103472282105042
+        }
+      ],
+      "cv_0.050": [
+        {
+          "alpha_broadening_over_omega_p": 0.0,
+          "alpha_energy_cv": 0.05,
+          "dispersion_residual": 1.160505249719578e-12,
+          "gamma_over_omega_p": 0.00016606305964263183,
+          "growth_fraction_of_unbroadened": 1.0,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103467650029287
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.0001,
+          "alpha_energy_cv": 0.05,
+          "dispersion_residual": 6.033016827154221e-12,
+          "gamma_over_omega_p": 0.00012342721224955198,
+          "growth_fraction_of_unbroadened": 0.7432550774095557,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103469923595
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.0005,
+          "alpha_energy_cv": 0.05,
+          "dispersion_residual": 7.136366702014578e-12,
+          "gamma_over_omega_p": 5.0129080088815294e-05,
+          "growth_fraction_of_unbroadened": 0.30186773745282797,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103474218839394
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.001,
+          "alpha_energy_cv": 0.05,
+          "dispersion_residual": 1.6713452055506425e-11,
+          "gamma_over_omega_p": 2.6856580015168607e-05,
+          "growth_fraction_of_unbroadened": 0.16172519085800324,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103475134003546
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.002,
+          "alpha_energy_cv": 0.05,
+          "dispersion_residual": 2.1416661768416638e-14,
+          "gamma_over_omega_p": 1.3695688913668322e-05,
+          "growth_fraction_of_unbroadened": 0.08247282052457351,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.510347542944011
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.005,
+          "alpha_energy_cv": 0.05,
+          "dispersion_residual": 1.191057276617519e-12,
+          "gamma_over_omega_p": 5.511186045861215e-06,
+          "growth_fraction_of_unbroadened": 0.03318730883148427,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103475518589191
+        },
+        {
+          "alpha_broadening_over_omega_p": 0.01,
+          "alpha_energy_cv": 0.05,
+          "dispersion_residual": 5.123521968280289e-13,
+          "gamma_over_omega_p": 2.7604891611248137e-06,
+          "growth_fraction_of_unbroadened": 0.016623138023985552,
+          "is_growing": true,
+          "omega_real_over_omega_p": 1.5103475531407942
+        }
+      ]
+    },
+    "denominator": "(omega + i*nu_alpha)^2 - (n*Omega_alpha/Omega_p)^2",
+    "interpretation": "Phenomenological damped-pole/decorrelation proxy applied to alpha harmonics only. It is not a Coulomb Fokker-Planck operator; background species remain collisionless."
+  },
+  "energy_distribution": {
+    "cv_definition": "standard_deviation(E_perp) / mean(E_perp)",
+    "family": "lognormal perpendicular alpha kinetic energy",
+    "mean_energy_kev": 24.0,
+    "normalization": "arithmetic mean held fixed at 24 keV",
+    "pole_behavior": "For k_parallel=0 and homogeneous B, cyclotron pole locations are independent of v_perp. Finite energy width averages the Bessel residues; it does not create a frequency spread."
+  },
+  "finite_width_results": {
+    "cv_0.000": {
+      "alpha_energy_cv": 0.0,
+      "averaged_R3": 0.06999017982603468,
+      "b_proton_cross": 1.2547495746491402,
+      "dispersion_residual": 9.384200291668488e-13,
+      "gamma_over_omega_p": 0.0016971465721730727,
+      "growth_fraction_of_cold": 1.0,
+      "growth_rate_s_inv": 8128.341917030972,
+      "growth_suppression_percent": 0.0,
+      "k_cross_m_inv": 245.1431909294604,
+      "mean_lambda_alpha": 109.37587783340533,
+      "omega_real_over_omega_p": 1.5103447207879066,
+      "quadrature_order": 64
+    },
+    "cv_0.010": {
+      "alpha_energy_cv": 0.01,
+      "averaged_R3": 0.037608929551848365,
+      "b_proton_cross": 1.2547495746491402,
+      "dispersion_residual": 7.389862313788978e-13,
+      "gamma_over_omega_p": 0.0012440770984739323,
+      "growth_fraction_of_cold": 0.7330404567714985,
+      "growth_rate_s_inv": 5958.403471655302,
+      "growth_suppression_percent": 26.695954322850145,
+      "k_cross_m_inv": 245.1431909294604,
+      "mean_lambda_alpha": 109.37587783340533,
+      "omega_real_over_omega_p": 1.5103456297321132,
+      "quadrature_order": 64
+    },
+    "cv_0.020": {
+      "alpha_energy_cv": 0.02,
+      "averaged_R3": 0.0057440985399073744,
+      "b_proton_cross": 1.2547495746491402,
+      "dispersion_residual": 3.58564522410393e-13,
+      "gamma_over_omega_p": 0.00048619822285156107,
+      "growth_fraction_of_cold": 0.28647980723846356,
+      "growth_rate_s_inv": 2328.605825559356,
+      "growth_suppression_percent": 71.35201927615364,
+      "k_cross_m_inv": 245.1431909294604,
+      "mean_lambda_alpha": 109.37587783340533,
+      "omega_real_over_omega_p": 1.5103465638424456,
+      "quadrature_order": 64
+    },
+    "cv_0.050": {
+      "alpha_energy_cv": 0.05,
+      "averaged_R3": 0.0006701157523436885,
+      "b_proton_cross": 1.2547495746491402,
+      "dispersion_residual": 1.1605856395100504e-12,
+      "gamma_over_omega_p": 0.000166063059642631,
+      "growth_fraction_of_cold": 0.09784838997730133,
+      "growth_rate_s_inv": 795.3451697664916,
+      "growth_suppression_percent": 90.21516100226987,
+      "k_cross_m_inv": 245.1431909294604,
+      "mean_lambda_alpha": 109.37587783340533,
+      "omega_real_over_omega_p": 1.5103467650029287,
+      "quadrature_order": 128
+    },
+    "cv_0.100": {
+      "alpha_energy_cv": 0.1,
+      "averaged_R3": 0.0006796312523856761,
+      "b_proton_cross": 1.2547495746491402,
+      "dispersion_residual": 6.3756903290246e-13,
+      "gamma_over_omega_p": 0.0001672379031253718,
+      "growth_fraction_of_cold": 0.09854063630534624,
+      "growth_rate_s_inv": 800.9719846116499,
+      "growth_suppression_percent": 90.14593636946537,
+      "k_cross_m_inv": 245.1431909294604,
+      "mean_lambda_alpha": 109.37587783340533,
+      "omega_real_over_omega_p": 1.5103467772522392,
+      "quadrature_order": 128
+    },
+    "cv_0.200": {
+      "alpha_energy_cv": 0.2,
+      "averaged_R3": 0.0007180346245399655,
+      "b_proton_cross": 1.2547495746491402,
+      "dispersion_residual": 1.167043394295643e-13,
+      "gamma_over_omega_p": 0.00017189783488351143,
+      "growth_fraction_of_cold": 0.10128638133087631,
+      "growth_rate_s_inv": 823.2903389961452,
+      "growth_suppression_percent": 89.87136186691237,
+      "k_cross_m_inv": 245.1431909294604,
+      "mean_lambda_alpha": 109.37587783340533,
+      "omega_real_over_omega_p": 1.5103468275880942,
+      "quadrature_order": 512
+    }
+  },
+  "limitations": [
+    "The 24 keV alpha ring is the LAPD reference benchmark, not a p-B11 fusion-born alpha distribution.",
+    "The lognormal energy-width family is a sensitivity prior, not a measured distribution.",
+    "Finite k_parallel, velocity-space parallel spread, full Coulomb collisions, spatial gradients, and wave leakage are omitted.",
+    "Coherent proton response is not irreversible proton heat.",
+    "No reactor gain, net electricity, cost, or commercial feasibility result is implied."
+  ],
+  "reference_case": {
+    "alpha_harmonic": 3,
+    "alpha_harmonics": 40,
+    "alpha_mass_ratio_proton": 3.972599690252,
+    "alpha_ring_energy_kev": 24.0,
+    "alpha_to_proton_density": 0.02,
+    "electron_harmonics": 4,
+    "electron_temperature_ev": 10.0,
+    "k_perp_m_inv": 245.1431909294604,
+    "magnetic_field_t": 0.05,
+    "proton_density_m3": 1e+17,
+    "proton_harmonics": 40,
+    "proton_temperature_ev": 5.0
+  },
+  "title": "PARC-Delta v1.2 finite-width and alpha-pole broadening sensitivity"
+}

@@ -1,0 +1,70 @@
+{
+  "approximate_mass_crossing": {
+    "b_proton_at_crossing": 1.3065061561461064,
+    "case": {
+      "alpha_harmonic": 3,
+      "alpha_harmonics": 40,
+      "alpha_mass_ratio_proton": 4.0,
+      "alpha_ring_energy_kev": 24.0,
+      "alpha_to_proton_density": 0.02,
+      "electron_harmonics": 4,
+      "electron_temperature_ev": 10.0,
+      "k_perp_m_inv": 251.74,
+      "magnetic_field_t": 0.05,
+      "proton_density_m3": 1e+17,
+      "proton_harmonics": 40,
+      "proton_temperature_ev": 5.0
+    },
+    "derived_alpha_harmonic_frequency_over_omega_p": 1.5,
+    "destabilizing_residue_at_crossing": false,
+    "k_perp_exact_thermal_crossing_m_inv": 250.14800089174355,
+    "mean_ring_bessel_argument": 112.70587060953758,
+    "thermal_crossing_residue": -0.07214416940480348,
+    "thermal_root_matches_alpha_pole": true
+  },
+  "constants": {
+    "codata_alpha_to_proton_mass_ratio": 3.972599690252,
+    "codata_source": "NIST/CODATA 2022 recommended values",
+    "reference_approximation_alpha_to_proton_mass_ratio": 4.0
+  },
+  "interpretation": "The residue sign at the exact thermal crossing changes with the alpha mass convention. The CODATA-mass crossing is destabilizing, but its crossing wavenumber and b_p do not match the paper's approximate b_p~1.31 statement. At the paper's fixed k=251.74 m^-1, the CODATA-mass case is strongly detuned and stable at the reference alpha density. This is a parameter-convention sensitivity, not a completed reconciliation.",
+  "physical_mass_at_published_fixed_k": {
+    "alpha_pole_z": 2.2811450003484954,
+    "critical_alpha_density_fraction_of_reference": 78.97295352375487,
+    "derived_alpha_harmonic_frequency_over_omega_p": 1.5103459869673888,
+    "detuning_z": -0.04088096278999931,
+    "discriminant": 0.0016500907707186045,
+    "k_perp_m_inv": 251.74,
+    "local_z_imag": 0.0,
+    "local_z_real": 2.2403938642944343,
+    "locally_unstable": false,
+    "regular_dispersion_derivative": 2642.9184343135253,
+    "regular_root_z": 2.240264037558496,
+    "selected_residue_normalized": 0.013982589856924535,
+    "thermal_root_z": 2.2402729133114754
+  },
+  "physical_mass_crossing": {
+    "b_proton_at_crossing": 1.2547495746491402,
+    "case": {
+      "alpha_harmonic": 3,
+      "alpha_harmonics": 40,
+      "alpha_mass_ratio_proton": 3.972599690252,
+      "alpha_ring_energy_kev": 24.0,
+      "alpha_to_proton_density": 0.02,
+      "electron_harmonics": 4,
+      "electron_temperature_ev": 10.0,
+      "k_perp_m_inv": 251.74,
+      "magnetic_field_t": 0.05,
+      "proton_density_m3": 1e+17,
+      "proton_harmonics": 40,
+      "proton_temperature_ev": 5.0
+    },
+    "derived_alpha_harmonic_frequency_over_omega_p": 1.5103459869673888,
+    "destabilizing_residue_at_crossing": true,
+    "k_perp_exact_thermal_crossing_m_inv": 245.1431909294604,
+    "mean_ring_bessel_argument": 112.31918529486877,
+    "thermal_crossing_residue": 0.06999017982603468,
+    "thermal_root_matches_alpha_pole": true
+  },
+  "title": "PARC-Delta v1.2 alpha mass-convention sensitivity"
+}
