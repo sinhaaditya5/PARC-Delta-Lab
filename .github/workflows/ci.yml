@@ -1,0 +1,129 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+  MPLBACKEND: Agg
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install ruff==0.15.9
+      - name: Ruff (prototype, scripts)
+        run: ruff check --output-format=github .
+      - name: Fatal-error check (frozen parc-delta release)
+        run: ruff check --output-format=github --select E9,F63,F7,F82 parc-delta
+
+  integrity:
+    name: Release integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Verify parc-delta against SHA256SUMS.txt
+        run: ./scripts/verify_integrity.sh
+
+  test:
+    name: Tests (${{ matrix.os }}, Python ${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: parc-delta/pyproject.toml
+      - name: Install research package
+        run: python -m pip install -e "parc-delta[test]"
+      - name: Run test suite
+        working-directory: parc-delta
+        run: python -m pytest -q
+      - name: CLI smoke test
+        working-directory: parc-delta
+        run: python -m parc_delta_v10.cli examples/synthetic_unit_test_snapshot.json > /dev/null
+
+  pipeline:
+    name: Prototype pipeline
+    needs: [lint, integrity]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            parc-delta/pyproject.toml
+            requirements/prototype.txt
+      - name: Install
+        run: python -m pip install -e parc-delta -r requirements/prototype.txt
+      - name: Simulations, CAD, v1.6 rerun, diagrams, report
+        run: make sims cad rerun diagrams report PYTHON=python
+      - name: Regression check against published results
+        # Magnet and bench outputs are deterministic; the orbit pusher integrates
+        # 4,200 alphas for 10,000 steps, so libm differences across platforms can
+        # flip the fate of individual alphas (1 alpha = 0.024 %).
+        run: python scripts/check_results.py --rerun-max 1e-6 --tol orbits 0.05 0.01 --tol bench 0.05 1e-12
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-outputs
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            prototype/sim/out/*.png
+            prototype/sim/out/*.json
+            prototype/diagrams/out/
+            prototype/report/out/
+            prototype/cad/out/pdx1_assembly.step
+            prototype/cad/out/pdx1_parts.json
+
+  documents:
+    name: Report and deck
+    needs: pipeline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: prototype/docs/package-lock.json
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-outputs
+          path: prototype
+      - name: Install
+        working-directory: prototype/docs
+        run: npm ci --no-audit --no-fund
+      - name: Build docx report and pptx deck
+        working-directory: prototype/docs
+        run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: documents
+          retention-days: 14
+          if-no-files-found: error
+          path: prototype/docs/out/
