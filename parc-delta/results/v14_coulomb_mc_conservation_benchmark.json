@@ -1,0 +1,51 @@
+{
+  "operator": "all-pairs stochastic weak-deflection Coulomb Monte Carlo (Landau limit)",
+  "screening_model": "Maxwellian mixture Debye estimate from species temperatures",
+  "initial_conditions": {
+    "n_proton_m3": 1e+17,
+    "n_alpha_m3": 5e+16,
+    "n_electron_m3": 2e+17,
+    "temperature_ev_all_species": 10000.0,
+    "macroparticle_counts": {
+      "electron": 48,
+      "proton": 24,
+      "alpha": 12
+    },
+    "equal_macroparticle_number_weight_m3": 4166666666666666.5
+  },
+  "time_step_s": 1e-08,
+  "random_seed": 17,
+  "diagnostics": {
+    "pair_count": 3486,
+    "skipped_strong_coupling_pairs": 0,
+    "max_pair_deflection_rad": 0.003817842472288778,
+    "debye_length_m": 0.00105131815943624,
+    "coulomb_log_min": 18.325812394243012,
+    "coulomb_log_max": 25.045102260719688,
+    "relative_momentum_error": 3.0591396629687564e-16,
+    "relative_energy_error": 8.772654436076672e-16,
+    "momentum_density_before_kg_m2_s": [
+      5.238358282556528e-05,
+      1.9338882776602916e-05,
+      -5.97129491712144e-05
+    ],
+    "momentum_density_after_kg_m2_s": [
+      5.238358282556513e-05,
+      1.9338882776602896e-05,
+      -5.971294917121431e-05
+    ],
+    "energy_density_before_j_m3": 777.553739634997,
+    "energy_density_after_j_m3": 777.5537396349977,
+    "particle_counts_before": {
+      "electron": 48,
+      "proton": 24,
+      "alpha": 12
+    },
+    "particle_counts_after": {
+      "electron": 48,
+      "proton": 24,
+      "alpha": 12
+    }
+  },
+  "status": "conservation-mechanics benchmark only; not a slowing-down prediction"
+}
