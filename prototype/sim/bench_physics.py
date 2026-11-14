@@ -17,10 +17,11 @@ import sys
 from pathlib import Path
 
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.constants import e, epsilon_0, m_e, m_p, physical_constants, N_A
+from scipy.constants import e, epsilon_0, m_e, m_p, physical_constants
 from scipy.integrate import solve_ivp
 
 HERE = Path(__file__).resolve().parent
@@ -28,13 +29,13 @@ LAB = HERE.parents[1]
 sys.path.insert(0, str(HERE.parent / "design"))
 sys.path.insert(0, str(LAB / "parc-delta" / "src"))
 import pdx1_params as P  # noqa: E402
-from plotstyle import apply_style, COLORS  # noqa: E402
+from parc_delta_v10.linear_ibw import LAPDReferenceCase  # noqa: E402
 from parc_delta_v10.slowing_down import (  # noqa: E402
     MaxwellianFieldSpecies,
     expected_kinetic_energy_rate_per_marker_j_s,
     rosenbluth_test_particle_coefficients,
 )
-from parc_delta_v10.linear_ibw import LAPDReferenceCase  # noqa: E402
+from plotstyle import COLORS, apply_style  # noqa: E402
 
 OUT = HERE / "out"
 M_ALPHA = physical_constants["alpha particle mass"][0]
@@ -132,8 +133,6 @@ def main() -> None:
     fm = np.load(OUT / "field_map.npz")
     z = fm["z"]
     b_axis = np.abs(fm["bz"][0])
-    i_edge = np.argmin(np.abs(fm["r"] - P.PLASMA_RADIUS_MM / 1000))
-    b_edge = np.hypot(fm["bz"][i_edge], fm["br"][i_edge])
     fca = Q_ALPHA * b_axis / (2 * np.pi * M_ALPHA) / 1e6
     fcp = e * b_axis / (2 * np.pi * m_p) / 1e6
     fcb = 5 * e * b_axis / (2 * np.pi * M_B11) / 1e6

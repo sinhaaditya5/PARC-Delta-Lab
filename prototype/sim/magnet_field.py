@@ -18,6 +18,7 @@ from pathlib import Path
 
 import magpylib as magpy
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
@@ -25,7 +26,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "design"))
 import pdx1_params as P  # noqa: E402
-from plotstyle import apply_style, COLORS  # noqa: E402
+from plotstyle import COLORS, apply_style  # noqa: E402
 
 OUT = HERE / "out"
 OUT.mkdir(exist_ok=True)

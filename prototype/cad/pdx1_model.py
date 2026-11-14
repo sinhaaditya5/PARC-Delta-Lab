@@ -18,8 +18,26 @@ import time
 from collections import defaultdict
 from pathlib import Path
 
-from build123d import (Box, Color, Compound, Cone, Cylinder, Helix, Plane, Polygon, Pos, Rot,
-                       Sphere, Torus, Circle, export_step, export_stl, extrude, scale, sweep)
+from build123d import (
+    Box,
+    Circle,
+    Color,
+    Compound,
+    Cone,
+    Cylinder,
+    Helix,
+    Plane,
+    Polygon,
+    Pos,
+    Rot,
+    Sphere,
+    Torus,
+    export_step,
+    export_stl,
+    extrude,
+    scale,
+    sweep,
+)
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "design"))
