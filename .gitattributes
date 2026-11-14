@@ -24,6 +24,8 @@
 *.npz   binary
 
 # Archived numerical output: exclude from language stats and collapse in diffs.
-parc-delta/results/**  linguist-generated=true -diff
+# `-text` keeps the CRLF line endings Python's csv module writes, so the
+# files stay byte-identical to parc-delta/SHA256SUMS.txt on every platform.
+parc-delta/results/**  linguist-generated=true -diff -text
 deliverables/data/**   linguist-generated=true
 parc-delta/legacy/**   linguist-vendored=true
