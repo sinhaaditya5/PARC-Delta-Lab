@@ -1,0 +1,961 @@
+{
+  "title": "PARC-Delta v1.4 reaction-source and conserving Coulomb-collision prototype",
+  "version": "1.4.0-research",
+  "reaction_source": {
+    "reaction": "p + 11B -> alpha + 8Be -> 3 alpha",
+    "q_total_mev_from_nuclear_mass_balance": 8.681887942771937,
+    "nuclear_mass_convention": "CODATA proton and alpha nuclear masses; 11B atomic mass minus five electron masses; electron binding energy neglected",
+    "channels": [
+      "alpha0: 8Be ground-state branch",
+      "alpha1: first-excited-state branch"
+    ],
+    "alpha0_be8_relative_energy_mev": 0.09184,
+    "alpha1_be8_resonance_energy_mev": 3.028,
+    "alpha1_be8_resonance_width_mev": 1.5,
+    "method": "relativistic sequential two-body kinematics; isotropic primary and secondary decay directions",
+    "gyrotropic_projection": "normalized probability density f(v_parallel,v_perp) in the reacting-pair CM frame; 2*pi*v_perp velocity-space Jacobian included",
+    "sampling": [
+      {
+        "incident_proton_lab_energy_mev": 0.34,
+        "entrance_cm_energy_mev": 0.3114890401611774,
+        "channel": "alpha0",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 9.021887942771901,
+        "expected_q_plus_incident_lab_energy_mev": 9.021887942771937,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 8.993376982932913,
+        "expected_q_plus_ecm_mev": 8.993376982933114,
+        "mean_pitch_cosine_lab": 0.04472450068900246,
+        "mean_pitch_cosine_cm": -0.00012985339311326365,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 5.942812874741794,
+            "std_mev": 0.2715712444572218,
+            "q05_mev": 5.5189301874641385,
+            "median_mev": 5.939639873349506,
+            "q95_mev": 6.371672325895588,
+            "histogram_mode_mev": 5.775,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 1.5432492541268998,
+            "std_mev": 0.3309054694145901,
+            "q05_mev": 1.0313424169805785,
+            "median_mev": 1.5379372087338652,
+            "q95_mev": 2.100734632720514,
+            "histogram_mode_mev": 1.525,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 1.5358258139032062,
+            "std_mev": 0.33365329893458856,
+            "q05_mev": 1.008517557208961,
+            "median_mev": 1.5237149199031137,
+            "q95_mev": 2.0916965980155964,
+            "histogram_mode_mev": 1.275,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 5.9332022769826835,
+            "std_mev": 0.0,
+            "q05_mev": 5.9332022769826835,
+            "median_mev": 5.9332022769826835,
+            "q95_mev": 5.9332022769826835,
+            "histogram_mode_mev": 5.925000000000001,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 1.5347320098720865,
+            "std_mev": 0.3021709353362362,
+            "q05_mev": 1.0600928462689125,
+            "median_mev": 1.535902166524238,
+            "q95_mev": 2.0027473214767952,
+            "histogram_mode_mev": 1.525,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 1.5254426960781433,
+            "std_mev": 0.30217093533623124,
+            "q05_mev": 1.0574273844732034,
+            "median_mev": 1.524272539425965,
+            "q95_mev": 2.000081859681063,
+            "histogram_mode_mev": 1.525,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 0.09183999999999999,
+          "std": 1.3877787807814457e-17,
+          "q05": 0.09184,
+          "median": 0.09184,
+          "q95": 0.09184
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      },
+      {
+        "incident_proton_lab_energy_mev": 0.34,
+        "entrance_cm_energy_mev": 0.3114890401611774,
+        "channel": "alpha1",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 9.021887942771885,
+        "expected_q_plus_incident_lab_energy_mev": 9.021887942771937,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 8.99337698293291,
+        "expected_q_plus_ecm_mev": 8.993376982933114,
+        "mean_pitch_cosine_lab": 0.04788570056344757,
+        "mean_pitch_cosine_cm": 0.0018747292366044703,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 3.8996005890694225,
+            "std_mev": 0.9078566403106983,
+            "q05_mev": 2.240932879388811,
+            "median_mev": 3.9698329585764895,
+            "q95_mev": 5.307516017304533,
+            "histogram_mode_mev": 4.125,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 2.560091249807009,
+            "std_mev": 1.4422758554720703,
+            "q05_mev": 0.3754780977135852,
+            "median_mev": 2.486261829463956,
+            "q95_mev": 4.939096342056495,
+            "histogram_mode_mev": 0.625,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 2.562196103895456,
+            "std_mev": 1.4332283524161107,
+            "q05_mev": 0.3702727989835012,
+            "median_mev": 2.4904184833333147,
+            "q95_mev": 4.931782793955472,
+            "histogram_mode_mev": 2.125,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 3.891931585242389,
+            "std_mev": 0.880968858617232,
+            "q05_mev": 2.262028658384429,
+            "median_mev": 3.961448873113568,
+            "q95_mev": 5.249838767610594,
+            "histogram_mode_mev": 3.975,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 2.5471220014669678,
+            "std_mev": 1.4306689529205756,
+            "q05_mev": 0.3672113365307951,
+            "median_mev": 2.491392847804036,
+            "q95_mev": 4.89452003549261,
+            "histogram_mode_mev": 3.125,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 2.5543233962235536,
+            "std_mev": 1.424587581189299,
+            "q05_mev": 0.35340591055278314,
+            "median_mev": 2.490107651725566,
+            "q95_mev": 4.875939595488125,
+            "histogram_mode_mev": 3.375,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 3.155424179068619,
+          "std": 1.321849790158657,
+          "q05": 1.1176264575074775,
+          "median": 3.051224951580839,
+          "q95": 5.600925825802232
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      },
+      {
+        "incident_proton_lab_energy_mev": 0.675,
+        "entrance_cm_energy_mev": 0.6183888798350381,
+        "channel": "alpha0",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 9.356887942771115,
+        "expected_q_plus_incident_lab_energy_mev": 9.356887942771937,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 9.300276822605921,
+        "expected_q_plus_ecm_mev": 9.300276822606975,
+        "mean_pitch_cosine_lab": 0.0603924072703931,
+        "mean_pitch_cosine_cm": -0.00139879314278402,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 6.1593614663296306,
+            "std_mev": 0.3917919797885643,
+            "q05_mev": 5.543300309636379,
+            "median_mev": 6.156174587960777,
+            "q95_mev": 6.771764594826527,
+            "histogram_mode_mev": 6.025,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 1.6030463125290175,
+            "std_mev": 0.36660182451535583,
+            "q05_mev": 1.025729155938393,
+            "median_mev": 1.5929242975396392,
+            "q95_mev": 2.2288569248115437,
+            "histogram_mode_mev": 1.525,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 1.5944801639124657,
+            "std_mev": 0.3668531574835993,
+            "q05_mev": 1.01962796561063,
+            "median_mev": 1.5787611106109125,
+            "q95_mev": 2.2227493333688697,
+            "histogram_mode_mev": 1.725,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 6.137720270460704,
+            "std_mev": 0.0,
+            "q05_mev": 6.137720270460704,
+            "median_mev": 6.137720270460704,
+            "q95_mev": 6.137720270460704,
+            "histogram_mode_mev": 6.125,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 1.586323752804033,
+            "std_mev": 0.30839367398569023,
+            "q05_mev": 1.101009730922192,
+            "median_mev": 1.5860681338972427,
+            "q95_mev": 2.057659405805543,
+            "histogram_mode_mev": 1.975,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 1.5762327993411827,
+            "std_mev": 0.308393673985687,
+            "q05_mev": 1.1048971463393855,
+            "median_mev": 1.5764884182478909,
+            "q95_mev": 2.061546821223169,
+            "histogram_mode_mev": 1.125,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 0.09183999999999999,
+          "std": 1.3877787807814457e-17,
+          "q05": 0.09184,
+          "median": 0.09184,
+          "q95": 0.09184
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      },
+      {
+        "incident_proton_lab_energy_mev": 0.675,
+        "entrance_cm_energy_mev": 0.6183888798350381,
+        "channel": "alpha1",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 9.356887942771813,
+        "expected_q_plus_incident_lab_energy_mev": 9.356887942771937,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 9.300276822606607,
+        "expected_q_plus_ecm_mev": 9.300276822606975,
+        "mean_pitch_cosine_lab": 0.06487941212392345,
+        "mean_pitch_cosine_cm": 0.00028836579753362216,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 4.066501902715719,
+            "std_mev": 0.9870304388163361,
+            "q05_mev": 2.1872217868585495,
+            "median_mev": 4.144963493636624,
+            "q95_mev": 5.532973277121573,
+            "histogram_mode_mev": 4.625,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 2.6617692109606086,
+            "std_mev": 1.4997526614766397,
+            "q05_mev": 0.3428033111658578,
+            "median_mev": 2.6131814797381594,
+            "q95_mev": 5.088328595463781,
+            "histogram_mode_mev": 2.175,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 2.6286168290954866,
+            "std_mev": 1.5011800168994551,
+            "q05_mev": 0.35816455375331774,
+            "median_mev": 2.5302100471590165,
+            "q95_mev": 5.12823157480268,
+            "histogram_mode_mev": 1.875,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 4.0505818291353215,
+            "std_mev": 0.9327518368381317,
+            "q05_mev": 2.205228468431437,
+            "median_mev": 4.14745716354787,
+            "q95_mev": 5.390330319039299,
+            "histogram_mode_mev": 4.125,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 2.639024665980378,
+            "std_mev": 1.475038162310964,
+            "q05_mev": 0.34906961414815213,
+            "median_mev": 2.618127642653235,
+            "q95_mev": 4.973298294587925,
+            "histogram_mode_mev": 1.975,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 2.6106703274909075,
+            "std_mev": 1.4815391428688252,
+            "q05_mev": 0.36371903051347093,
+            "median_mev": 2.532317231598199,
+            "q95_mev": 5.056629909602156,
+            "histogram_mode_mev": 2.6750000000000003,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 3.2243233997070284,
+          "std": 1.399539527822089,
+          "q05": 1.2137590983357966,
+          "median": 3.079082317846928,
+          "q95": 5.993075302487532
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      },
+      {
+        "incident_proton_lab_energy_mev": 1.85,
+        "entrance_cm_energy_mev": 1.6947620946866664,
+        "channel": "alpha0",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 10.531887942772883,
+        "expected_q_plus_incident_lab_energy_mev": 10.531887942771936,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 10.37665003745759,
+        "expected_q_plus_ecm_mev": 10.376650037458603,
+        "mean_pitch_cosine_lab": 0.09464819743588934,
+        "mean_pitch_cosine_cm": -0.0010191613965061762,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 6.91053226636637,
+            "std_mev": 0.6934271060342744,
+            "q05_mev": 5.834447261969172,
+            "median_mev": 6.903344753048032,
+            "q95_mev": 7.992164355502177,
+            "histogram_mode_mev": 6.025,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 1.804174545767276,
+            "std_mev": 0.4707941675434979,
+            "q05_mev": 1.0518238347813622,
+            "median_mev": 1.7747796688270228,
+            "q95_mev": 2.6295407484316,
+            "histogram_mode_mev": 1.6750000000000003,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 1.8171811306392383,
+            "std_mev": 0.48077876506525125,
+            "q05_mev": 1.065242905729383,
+            "median_mev": 1.7873636408551192,
+            "q95_mev": 2.6623504762625996,
+            "histogram_mode_mev": 1.6750000000000003,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 6.85499303568713,
+            "std_mev": 0.0,
+            "q05_mev": 6.85499303568713,
+            "median_mev": 6.85499303568713,
+            "q95_mev": 6.85499303568713,
+            "histogram_mode_mev": 6.875,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 1.7545452910501278,
+            "std_mev": 0.32122750590535454,
+            "q05_mev": 1.2587868624200838,
+            "median_mev": 1.7569181889627998,
+            "q95_mev": 2.2621454792575606,
+            "histogram_mode_mev": 1.8250000000000002,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 1.7671117107203325,
+            "std_mev": 0.3212275059053569,
+            "q05_mev": 1.259511522513003,
+            "median_mev": 1.764738812807309,
+            "q95_mev": 2.262870139350457,
+            "histogram_mode_mev": 1.725,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 0.09183999999999999,
+          "std": 1.3877787807814457e-17,
+          "q05": 0.09184,
+          "median": 0.09184,
+          "q95": 0.09184
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      },
+      {
+        "incident_proton_lab_energy_mev": 1.85,
+        "entrance_cm_energy_mev": 1.6947620946866664,
+        "channel": "alpha1",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 10.531887942773793,
+        "expected_q_plus_incident_lab_energy_mev": 10.531887942771936,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 10.376650037458484,
+        "expected_q_plus_ecm_mev": 10.376650037458603,
+        "mean_pitch_cosine_lab": 0.10001692911499663,
+        "mean_pitch_cosine_cm": -0.0015861205520891495,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 4.77386298877588,
+            "std_mev": 1.144163654020635,
+            "q05_mev": 2.7255200333409677,
+            "median_mev": 4.834101376987974,
+            "q95_mev": 6.443280215637127,
+            "histogram_mode_mev": 4.525,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 2.8789262307909405,
+            "std_mev": 1.704771704628454,
+            "q05_mev": 0.3635959604221171,
+            "median_mev": 2.7976862635903217,
+            "q95_mev": 5.7528128503113285,
+            "histogram_mode_mev": 1.1750000000000003,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 2.8790987232069716,
+            "std_mev": 1.666766410688319,
+            "q05_mev": 0.38376374752610903,
+            "median_mev": 2.784752518667574,
+            "q95_mev": 5.696038439410427,
+            "histogram_mode_mev": 2.575,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 4.7267646026179735,
+            "std_mev": 0.9798438971566715,
+            "q05_mev": 2.8411518091404107,
+            "median_mev": 4.865517807034394,
+            "q95_mev": 6.114370761010582,
+            "histogram_mode_mev": 4.975,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 2.8084644296699715,
+            "std_mev": 1.621958180047968,
+            "q05_mev": 0.34291369615684747,
+            "median_mev": 2.7862075925811496,
+            "q95_mev": 5.450825666970626,
+            "histogram_mode_mev": 2.825,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 2.841421005170539,
+            "std_mev": 1.6096910059481315,
+            "q05_mev": 0.3807910798679132,
+            "median_mev": 2.8010620964935242,
+            "q95_mev": 5.445854732311794,
+            "histogram_mode_mev": 3.4250000000000003,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 3.2862762686458975,
+          "std": 1.4702843673289823,
+          "q05": 1.203707706398549,
+          "median": 3.078187142402914,
+          "q95": 6.115680902071173
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      },
+      {
+        "incident_proton_lab_energy_mev": 2.57,
+        "entrance_cm_energy_mev": 2.3542758126332046,
+        "channel": "alpha0",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 11.251887942772132,
+        "expected_q_plus_incident_lab_energy_mev": 11.251887942771937,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 11.036163755404047,
+        "expected_q_plus_ecm_mev": 11.036163755405141,
+        "mean_pitch_cosine_lab": 0.10842840689548079,
+        "mean_pitch_cosine_cm": -0.00282279477298088,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 7.379220819378576,
+            "std_mev": 0.8300490201060521,
+            "q05_mev": 6.06029102529069,
+            "median_mev": 7.393022907490149,
+            "q95_mev": 8.665586498270727,
+            "histogram_mode_mev": 8.025,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 1.9471450636495669,
+            "std_mev": 0.5365463260483683,
+            "q05_mev": 1.0959879265647259,
+            "median_mev": 1.9121293746909487,
+            "q95_mev": 2.88125108207646,
+            "histogram_mode_mev": 1.8250000000000002,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 1.9255220597439917,
+            "std_mev": 0.5290182810802753,
+            "q05_mev": 1.1010937310484452,
+            "median_mev": 1.904252055321649,
+            "q95_mev": 2.859178714052973,
+            "histogram_mode_mev": 2.0250000000000004,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 7.294462268721418,
+            "std_mev": 0.0,
+            "q05_mev": 7.294462268721418,
+            "median_mev": 7.294462268721418,
+            "q95_mev": 7.294462268721418,
+            "histogram_mode_mev": 7.275,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 1.8811949163903874,
+            "std_mev": 0.3302090944142471,
+            "q05_mev": 1.3567260490863418,
+            "median_mev": 1.8894609815260992,
+            "q95_mev": 2.3948137116488852,
+            "histogram_mode_mev": 1.9250000000000003,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 1.8605065702922403,
+            "std_mev": 0.3302090944142419,
+            "q05_mev": 1.3468877750339288,
+            "median_mev": 1.8522405051564874,
+            "q95_mev": 2.384975437596472,
+            "histogram_mode_mev": 1.5750000000000002,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 0.09183999999999999,
+          "std": 1.3877787807814457e-17,
+          "q05": 0.09184,
+          "median": 0.09184,
+          "q95": 0.09184
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      },
+      {
+        "incident_proton_lab_energy_mev": 2.57,
+        "entrance_cm_energy_mev": 2.3542758126332046,
+        "channel": "alpha1",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 11.251887942772653,
+        "expected_q_plus_incident_lab_energy_mev": 11.251887942771937,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 11.036163755404562,
+        "expected_q_plus_ecm_mev": 11.036163755405141,
+        "mean_pitch_cosine_lab": 0.11846366596740707,
+        "mean_pitch_cosine_cm": 0.0010417895218885656,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 5.21588803620354,
+            "std_mev": 1.2458975707916273,
+            "q05_mev": 3.0033283303443343,
+            "median_mev": 5.269487792415475,
+            "q95_mev": 7.069270501289156,
+            "histogram_mode_mev": 4.925000000000001,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 3.0208432673309,
+            "std_mev": 1.784519424102381,
+            "q05_mev": 0.3635543887753556,
+            "median_mev": 2.9321182819937803,
+            "q95_mev": 6.068161607522528,
+            "histogram_mode_mev": 1.225,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 3.015156639238212,
+            "std_mev": 1.7780907470871588,
+            "q05_mev": 0.40297191185479736,
+            "median_mev": 2.8917624564176094,
+            "q95_mev": 6.0372909614155095,
+            "histogram_mode_mev": 1.625,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 5.164171956763238,
+            "std_mev": 1.0244968008939324,
+            "q05_mev": 3.1876356953870753,
+            "median_mev": 5.293112590560895,
+            "q95_mev": 6.609701600155448,
+            "histogram_mode_mev": 5.325000000000001,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 2.940233489505264,
+            "std_mev": 1.69642634876639,
+            "q05_mev": 0.3773535336276382,
+            "median_mev": 2.91012422817289,
+            "q95_mev": 5.702585544368957,
+            "histogram_mode_mev": 0.5750000000000001,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 2.931758309136061,
+            "std_mev": 1.693615428688998,
+            "q05_mev": 0.4086065858998609,
+            "median_mev": 2.833419944848174,
+            "q95_mev": 5.66893949846692,
+            "histogram_mode_mev": 3.6750000000000003,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 3.2895454528929675,
+          "std": 1.5373386132904305,
+          "q05": 1.119911179987148,
+          "median": 3.0961849490413265,
+          "q95": 6.25553563440834
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      },
+      {
+        "incident_proton_lab_energy_mev": 4.73,
+        "entrance_cm_energy_mev": 4.332583852183234,
+        "channel": "alpha0",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 13.411887942771315,
+        "expected_q_plus_incident_lab_energy_mev": 13.411887942771937,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 13.014471794954062,
+        "expected_q_plus_ecm_mev": 13.01447179495517,
+        "mean_pitch_cosine_lab": 0.1353997630414671,
+        "mean_pitch_cosine_cm": -0.0020654229310686054,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 8.759157161682728,
+            "std_mev": 1.238093413883126,
+            "q05_mev": 6.805217783397074,
+            "median_mev": 8.77301565733137,
+            "q95_mev": 10.680667196906597,
+            "histogram_mode_mev": 8.975000000000001,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 2.3303086406524383,
+            "std_mev": 0.7261794323847169,
+            "q05_mev": 1.1976245112700554,
+            "median_mev": 2.3042903666430448,
+            "q95_mev": 3.5862447086704834,
+            "histogram_mode_mev": 2.4250000000000003,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 2.32242214043615,
+            "std_mev": 0.7229827942535498,
+            "q05_mev": 1.2252749507675618,
+            "median_mev": 2.270257158310642,
+            "q95_mev": 3.5868396942712253,
+            "histogram_mode_mev": 1.725,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 8.612637088582233,
+            "std_mev": 0.0,
+            "q05_mev": 8.612637088582233,
+            "median_mev": 8.612637088582233,
+            "q95_mev": 8.612637088582233,
+            "histogram_mode_mev": 8.625,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 2.2049136318498346,
+            "std_mev": 0.36658796227652585,
+            "q05_mev": 1.633877380693275,
+            "median_mev": 2.2074788399099816,
+            "q95_mev": 2.771166107889053,
+            "histogram_mode_mev": 1.875,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 2.1969210745219954,
+            "std_mev": 0.36658796227652746,
+            "q05_mev": 1.6306685984825435,
+            "median_mev": 2.1943558664618195,
+            "q95_mev": 2.7679573256787533,
+            "histogram_mode_mev": 2.5250000000000004,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 0.09183999999999999,
+          "std": 1.3877787807814457e-17,
+          "q05": 0.09184,
+          "median": 0.09184,
+          "q95": 0.09184
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      },
+      {
+        "incident_proton_lab_energy_mev": 4.73,
+        "entrance_cm_energy_mev": 4.332583852183234,
+        "channel": "alpha1",
+        "events": 4000,
+        "alphas": 12000,
+        "event_total_alpha_kinetic_energy_lab_mev_mean": 13.411887942771921,
+        "expected_q_plus_incident_lab_energy_mev": 13.411887942771937,
+        "event_total_alpha_kinetic_energy_cm_mev_mean": 13.014471794954664,
+        "expected_q_plus_ecm_mev": 13.01447179495517,
+        "mean_pitch_cosine_lab": 0.14841918435460222,
+        "mean_pitch_cosine_cm": 0.00044515546272637466,
+        "per_role_energy_lab_mev": {
+          "primary": {
+            "mean_mev": 6.633176919655824,
+            "std_mev": 1.5108747632309698,
+            "q05_mev": 4.202862988667221,
+            "median_mev": 6.706896579345084,
+            "q95_mev": 8.864529058564992,
+            "histogram_mode_mev": 7.425000000000001,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 3.3533460850925705,
+            "std_mev": 2.01236599285389,
+            "q05_mev": 0.4706390455472047,
+            "median_mev": 3.1676577688433554,
+            "q95_mev": 6.928142282039811,
+            "histogram_mode_mev": 3.325,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 3.425364938023525,
+            "std_mev": 2.032129494703071,
+            "q05_mev": 0.4527472366778284,
+            "median_mev": 3.2974867239488503,
+            "q95_mev": 6.938979838300178,
+            "histogram_mode_mev": 3.325,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "per_role_energy_cm_mev": {
+          "primary": {
+            "mean_mev": 6.456524131768277,
+            "std_mev": 1.0961564541743518,
+            "q05_mev": 4.395405018043585,
+            "median_mev": 6.602194824836943,
+            "q95_mev": 7.951966736974327,
+            "histogram_mode_mev": 6.675000000000001,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_1": {
+            "mean_mev": 3.2318631985999775,
+            "std_mev": 1.894214125426783,
+            "q05_mev": 0.4358499192160253,
+            "median_mev": 3.1198970078880848,
+            "q95_mev": 6.4028079809350835,
+            "histogram_mode_mev": 1.025,
+            "histogram_bin_width_mev": 0.05
+          },
+          "be8_daughter_2": {
+            "mean_mev": 3.3260844645864105,
+            "std_mev": 1.9136862150208995,
+            "q05_mev": 0.40305612278948505,
+            "median_mev": 3.2615008485779526,
+            "q95_mev": 6.409495793195674,
+            "histogram_mode_mev": 4.125,
+            "histogram_bin_width_mev": 0.05
+          }
+        },
+        "be8_relative_energy_mev": {
+          "mean": 3.3288493786457765,
+          "std": 1.6450994861847663,
+          "q05": 1.0839206863946405,
+          "median": 3.11036490690334,
+          "q95": 6.422284680426719
+        },
+        "branching_fraction": null,
+        "cross_section_weighting": "not applied",
+        "detector_response": "not applied",
+        "angular_distribution": "isotropic sequential-decay approximation"
+      }
+    ],
+    "weights": "No branch fractions or differential cross-section weights assumed; channels kept separate.",
+    "not_included": [
+      "R-matrix line shape",
+      "reaction differential cross section",
+      "branching fractions",
+      "reactant distribution convolution",
+      "solid/plasma stopping",
+      "detector acceptance and response"
+    ],
+    "external_spectrum_comparison": {
+      "reference": "Mazzucconi et al. (2025), spectra reported in the CM frame; primary alpha1-associated feature described as roughly 4.5-7 MeV across incident proton energies 0.34-4.73 MeV",
+      "model_check": "The present alpha1 CM primary histogram mode is below 4.5 MeV for the 0.34 and 0.675 MeV beam cases. The paper describes peak locations while this implementation estimates modes from finite Monte Carlo samples with a 0.05 MeV histogram bin; this is a preliminary mismatch diagnostic, not a like-for-like detector-level validation.",
+      "likely_model_gaps": [
+        "simple truncated Cauchy resonance line shape",
+        "omitted energy-dependent penetrability and R-matrix interference",
+        "isotropic angular approximation",
+        "no detector/target response convolution"
+      ]
+    }
+  },
+  "collision_operator": {
+    "implemented": true,
+    "type": "stochastic pairwise weak-deflection Coulomb Monte Carlo in the Landau limit",
+    "pair_update": "rotate relative velocity at fixed magnitude; update both partners in their pair centre-of-mass frame",
+    "cutoffs": "Debye screening upper impact parameter; max(classical 90-degree impact parameter, de Broglie wavelength) lower impact parameter",
+    "requirement": "equal physical number weight per macroparticle across all species",
+    "benchmark": {
+      "operator": "all-pairs stochastic weak-deflection Coulomb Monte Carlo (Landau limit)",
+      "screening_model": "Maxwellian mixture Debye estimate from species temperatures",
+      "initial_conditions": {
+        "n_proton_m3": 1e+17,
+        "n_alpha_m3": 5e+16,
+        "n_electron_m3": 2e+17,
+        "temperature_ev_all_species": 10000.0,
+        "macroparticle_counts": {
+          "electron": 48,
+          "proton": 24,
+          "alpha": 12
+        },
+        "equal_macroparticle_number_weight_m3": 4166666666666666.5
+      },
+      "time_step_s": 1e-08,
+      "random_seed": 17,
+      "diagnostics": {
+        "pair_count": 3486,
+        "skipped_strong_coupling_pairs": 0,
+        "max_pair_deflection_rad": 0.003817842472288778,
+        "debye_length_m": 0.00105131815943624,
+        "coulomb_log_min": 18.325812394243012,
+        "coulomb_log_max": 25.045102260719688,
+        "relative_momentum_error": 3.0591396629687564e-16,
+        "relative_energy_error": 8.772654436076672e-16,
+        "momentum_density_before_kg_m2_s": [
+          5.238358282556528e-05,
+          1.9338882776602916e-05,
+          -5.97129491712144e-05
+        ],
+        "momentum_density_after_kg_m2_s": [
+          5.238358282556513e-05,
+          1.9338882776602896e-05,
+          -5.971294917121431e-05
+        ],
+        "energy_density_before_j_m3": 777.553739634997,
+        "energy_density_after_j_m3": 777.5537396349977,
+        "particle_counts_before": {
+          "electron": 48,
+          "proton": 24,
+          "alpha": 12
+        },
+        "particle_counts_after": {
+          "electron": 48,
+          "proton": 24,
+          "alpha": 12
+        }
+      },
+      "status": "conservation-mechanics benchmark only; not a slowing-down prediction"
+    },
+    "source_coupled_smoke_test": {
+      "initial_alpha_source": "alpha1 sequential decay; 2 reaction events / 6 alpha particles; E_cm=0.620 MeV",
+      "background": "Maxwellian electrons and protons at 10 keV",
+      "screening_length_m": 0.0013572459076873302,
+      "screening_scope": "Maxwellian electron/proton background only; nonthermal alpha contribution to screening omitted",
+      "equal_macroparticle_number_weight_m3": 8333333333333333.0,
+      "time_step_s": 1e-08,
+      "diagnostics": {
+        "pair_count": 861,
+        "skipped_strong_coupling_pairs": 0,
+        "max_pair_deflection_rad": 0.0011567624115090475,
+        "coulomb_log_min": 19.36434468318875,
+        "coulomb_log_max": 28.489067374565117,
+        "relative_momentum_error": 2.0783029755952992e-16,
+        "relative_energy_error": 1.2835369952427764e-15,
+        "particle_counts_before": {
+          "electron": 24,
+          "proton": 12,
+          "alpha_birth": 6
+        },
+        "particle_counts_after": {
+          "electron": 24,
+          "proton": 12,
+          "alpha_birth": 6
+        }
+      },
+      "status": "source-to-collision plumbing and invariant check only; two events are not a slowing-down simulation"
+    },
+    "scope_limits": [
+      "not a deterministic finite-grid Landau operator",
+      "not a finite-Larmor-radius gyrokinetic operator",
+      "no discrete H-theorem proof; entropy monotonicity is not claimed",
+      "strong-coupling pairs with non-positive Coulomb logarithm are skipped and counted",
+      "not yet coupled to the linear IBW eigenmode or alpha susceptibility"
+    ]
+  },
+  "release_gates": {
+    "reaction_birth_kinematics": "implemented for separate alpha0/alpha1 sequential channels; independent validation against differential spectra still required",
+    "coulomb_pair_invariants": "implemented and tested at macro-particle level",
+    "full_landau_h_theorem": "open",
+    "reaction_source_to_gyrotropic_susceptibility": "open",
+    "collisionally modified_ibw_root": "open",
+    "irreversible_proton_heating": "not calculated",
+    "reactor_gain_and_net_electricity": "not calculated"
+  }
+}

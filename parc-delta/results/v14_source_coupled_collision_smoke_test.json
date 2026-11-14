@@ -1,0 +1,28 @@
+{
+  "initial_alpha_source": "alpha1 sequential decay; 2 reaction events / 6 alpha particles; E_cm=0.620 MeV",
+  "background": "Maxwellian electrons and protons at 10 keV",
+  "screening_length_m": 0.0013572459076873302,
+  "screening_scope": "Maxwellian electron/proton background only; nonthermal alpha contribution to screening omitted",
+  "equal_macroparticle_number_weight_m3": 8333333333333333.0,
+  "time_step_s": 1e-08,
+  "diagnostics": {
+    "pair_count": 861,
+    "skipped_strong_coupling_pairs": 0,
+    "max_pair_deflection_rad": 0.0011567624115090475,
+    "coulomb_log_min": 19.36434468318875,
+    "coulomb_log_max": 28.489067374565117,
+    "relative_momentum_error": 2.0783029755952992e-16,
+    "relative_energy_error": 1.2835369952427764e-15,
+    "particle_counts_before": {
+      "electron": 24,
+      "proton": 12,
+      "alpha_birth": 6
+    },
+    "particle_counts_after": {
+      "electron": 24,
+      "proton": 12,
+      "alpha_birth": 6
+    }
+  },
+  "status": "source-to-collision plumbing and invariant check only; two events are not a slowing-down simulation"
+}
