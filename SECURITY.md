@@ -12,7 +12,7 @@
 Please **do not** open a public issue for security problems.
 
 Report privately through GitHub's
-[private vulnerability reporting](https://github.com/aditbytes/PARC-Delta-Lab/security/advisories/new)
+[private vulnerability reporting](https://github.com/sinhaaditya5/PARC-Delta-Lab/security/advisories/new)
 (**Security → Report a vulnerability**). Include:
 
 - the affected file(s) and version or commit,

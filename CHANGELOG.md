@@ -55,5 +55,5 @@ Summarised from `parc-delta/docs/`; see each design note for detail.
 | 1.0 | Instantaneous energy ledger, wave-mode snapshots and CLI |
 | 0.9 | Zero-dimensional p–¹¹B screening model (archived in `parc-delta/legacy/`) |
 
-[Unreleased]: https://github.com/aditbytes/PARC-Delta-Lab/compare/v1.6.0...HEAD
-[1.6.0]: https://github.com/aditbytes/PARC-Delta-Lab/releases/tag/v1.6.0
+[Unreleased]: https://github.com/sinhaaditya5/PARC-Delta-Lab/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/sinhaaditya5/PARC-Delta-Lab/releases/tag/v1.6.0

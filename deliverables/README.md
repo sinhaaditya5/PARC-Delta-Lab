@@ -2,7 +2,7 @@
 
 Curated outputs of the PDX-1 concept study. Small, diffable artifacts live
 here in git. Large binaries are attached to the
-[**v1.6.0 GitHub Release**](https://github.com/aditbytes/PARC-Delta-Lab/releases/tag/v1.6.0)
+[**v1.6.0 GitHub Release**](https://github.com/sinhaaditya5/PARC-Delta-Lab/releases/tag/v1.6.0)
 so cloning stays fast. Everything here can be regenerated from source with `make all`.
 
 ## In this folder
