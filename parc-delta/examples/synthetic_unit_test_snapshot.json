@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "run_id": "SYNTHETIC-ONLY-DO-NOT-USE-AS-PHYSICS",
+    "purpose": "CLI and energy-ledger smoke test only",
+    "units": "SI",
+    "note": "Every numeric value in this file is fabricated for software testing. None is a PARC estimate or a literature result."
+  },
+  "external_flows": [
+    {
+      "reservoir": "alpha_fast",
+      "power_w": 10.0,
+      "direction": "in",
+      "label": "fusion_alpha_birth_power",
+      "source_ref": "synthetic://unit-test/alpha-source"
+    },
+    {
+      "reservoir": "electrons",
+      "power_w": 0.1,
+      "direction": "out",
+      "label": "bremsstrahlung",
+      "source_ref": "synthetic://unit-test/radiation"
+    }
+  ],
+  "modes": [
+    {
+      "name": "synthetic-ibw-01",
+      "energy_j": 1.0,
+      "sigma_energy_j": 0.0,
+      "source_ref": "synthetic://unit-test/mode-energy",
+      "escape_damping_s_inv": 0.005,
+      "sigma_escape_s_inv": 0.0,
+      "rf_drive_w": 0.0,
+      "species_growth_rates": {
+        "alpha_fast": {
+          "gamma_s_inv": 0.1,
+          "sigma_s_inv": 0.0,
+          "source_ref": "synthetic://unit-test/gamma-alpha",
+          "method": "fabricated unit-test parameter"
+        },
+        "protons": {
+          "gamma_s_inv": -0.08,
+          "sigma_s_inv": 0.0,
+          "source_ref": "synthetic://unit-test/gamma-protons",
+          "method": "fabricated unit-test parameter"
+        },
+        "boron_ions": {
+          "gamma_s_inv": -0.005,
+          "sigma_s_inv": 0.0,
+          "source_ref": "synthetic://unit-test/gamma-boron",
+          "method": "fabricated unit-test parameter"
+        },
+        "electrons": {
+          "gamma_s_inv": -0.01,
+          "sigma_s_inv": 0.0,
+          "source_ref": "synthetic://unit-test/gamma-electrons",
+          "method": "fabricated unit-test parameter"
+        }
+      }
+    }
+  ],
+  "collisional_transfers": [],
+  "nonlinear_wave_transfers": [],
+  "irreversible_proton_heating_w": null
+}
