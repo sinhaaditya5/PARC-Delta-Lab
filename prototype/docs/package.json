@@ -1,0 +1,21 @@
+{
+  "name": "pdx1-docs",
+  "version": "1.6.0",
+  "private": true,
+  "description": "Generates the PDX-1 test report (.docx) and deck (.pptx) from prototype/report/out/results_summary.json",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "report": "node make_docx.js",
+    "deck": "node make_deck.js",
+    "build": "node make_docx.js && node make_deck.js"
+  },
+  "dependencies": {
+    "docx": "^9.15.1",
+    "pptxgenjs": "^4.0.1",
+    "sharp": "^0.35.5"
+  }
+}
