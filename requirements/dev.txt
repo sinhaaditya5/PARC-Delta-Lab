@@ -1,0 +1,5 @@
+# Contributor tooling (lint, tests, git hooks).
+-r prototype.txt
+pytest>=8
+ruff==0.15.9
+pre-commit>=3.7

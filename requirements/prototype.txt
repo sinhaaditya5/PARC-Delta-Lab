@@ -1,0 +1,9 @@
+# PDX-1 prototype pipeline: device simulations, CAD and figures.
+# Install from the repository root together with the research package:
+#   python -m pip install -e "parc-delta[test]" -r requirements/prototype.txt
+numpy>=1.26
+scipy>=1.12
+matplotlib>=3.8
+magpylib>=5.0        # magpy.current.Circle (5.x API)
+build123d>=0.9       # OpenCascade-based CAD; pulls cadquery-ocp wheels
+pillow>=10.0
