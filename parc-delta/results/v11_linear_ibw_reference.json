@@ -1,0 +1,86 @@
+{
+  "derived_plasma": {
+    "alpha_cyclotron_s_inv": 2394708.2857502466,
+    "alpha_density_m3": 2000000000000000.0,
+    "alpha_pole_frequency_over_omega_p": 1.5,
+    "alpha_pole_z": 2.25,
+    "alpha_ring_lambda": 112.70587060953758,
+    "b_electron": 0.00144126237586854,
+    "b_proton": 1.3231888822764408,
+    "electron_cyclotron_s_inv": 8794100041.889992,
+    "electron_density_m3": 1.04e+17,
+    "omega_pa_sq_over_omega_p_sq": 151.1259494539783,
+    "omega_pe_sq_over_omega_p_sq": 14429496.437891018,
+    "omega_pp_sq_over_omega_p_sq": 7556.297472698916,
+    "proton_cyclotron_s_inv": 4789416.571500493
+  },
+  "exact_thermal_crossing_check": {
+    "b_proton_at_crossing": 1.3065061561461064,
+    "destabilizing_residue_at_crossing": false,
+    "k_perp_exact_thermal_crossing_m_inv": 250.14800089174355,
+    "thermal_crossing_residue": -0.07214416940480348,
+    "thermal_root_matches_alpha_pole": true
+  },
+  "full_mode": {
+    "alpha_pole_z": 2.25,
+    "critical_alpha_density_fraction_of_reference": 0.598016921000825,
+    "detuning_z": -0.009739318966138999,
+    "discriminant_real": -6.376046541199983e-05,
+    "gamma_over_omega_p": 0.001334512154197673,
+    "growth_rate_s_inv": 6391.534626183156,
+    "local_z_imag": 0.003992507526981002,
+    "local_z_real": 2.2451303405169307,
+    "normalized_dispersion_residual": 1.2536635296386232e-14,
+    "omega_real_over_omega_p": 1.4983746859397606,
+    "omega_real_s_inv": 7176340.551156737,
+    "regular_dispersion_derivative": 2642.988377319576,
+    "regular_root_z": 2.240260681033861,
+    "selected_residue_normalized": 0.10480426777910982,
+    "thermal_root_z": 2.2402729133114754,
+    "z_imag": 0.0039991984598574636,
+    "z_real": 2.2451249185423867
+  },
+  "linear_power_partition": {
+    "alpha_loss_weight": 1.0,
+    "closure_sum": 1.0,
+    "electron_fraction_of_alpha_loss": 0.00036059658287418325,
+    "electron_weight": 4.275285667356421,
+    "field_fraction_of_alpha_loss": 8.434444173578568e-05,
+    "proton_fraction_of_alpha_loss": 0.9995550589753901,
+    "proton_weight": 11850.87053046791
+  },
+  "model": "strictly_perpendicular_collisionless_electrostatic_IBW",
+  "pole_analysis": {
+    "alpha_pole_z": 2.25,
+    "critical_alpha_density_fraction_of_reference": 0.598016921000825,
+    "detuning_z": -0.009739318966138999,
+    "discriminant": -6.376046541199983e-05,
+    "local_z_imag": 0.003992507526981002,
+    "local_z_real": 2.2451303405169307,
+    "locally_unstable": true,
+    "regular_dispersion_derivative": 2642.988377319576,
+    "regular_root_z": 2.240260681033861,
+    "selected_residue_normalized": 0.10480426777910982,
+    "thermal_root_z": 2.2402729133114754
+  },
+  "reference_case": {
+    "alpha_harmonic": 3,
+    "alpha_harmonics": 40,
+    "alpha_ring_energy_kev": 24.0,
+    "alpha_to_proton_density": 0.02,
+    "electron_harmonics": 4,
+    "electron_temperature_ev": 10.0,
+    "k_perp_m_inv": 251.74,
+    "magnetic_field_t": 0.05,
+    "proton_density_m3": 1e+17,
+    "proton_harmonics": 40,
+    "proton_temperature_ev": 5.0
+  },
+  "scope_warning": "LAPD proton-alpha benchmark only; not a p-B11 reactor, nonlinear model, collisional prediction, or irreversible proton-heating estimate.",
+  "wavenumber_scan_summary": {
+    "max_local_growth_over_omega_p": 0.0013321352497067712,
+    "unstable_k_max_m_inv": 252.5,
+    "unstable_k_min_m_inv": 250.9,
+    "unstable_point_count": 33
+  }
+}
