@@ -41,6 +41,9 @@ def repro() -> dict:
     orig = LAB / "parc-delta" / "results"
     rerun = LAB / "runs" / "v16_rerun" / "results"
     files, total, worst = [], 0, 0.0
+    if not rerun.is_dir():
+        print(f"note: {rerun} not found - run `make rerun` first; reproducibility (T2) not compared")
+        return {"files": files, "file_count": 0, "values_compared": 0, "max_rel_diff": float("nan")}
     for f in sorted(orig.glob("v16_*")):
         a, b = nums(f), nums(rerun / f.name)
         w = max((abs(x - y) / abs(x) for x, y in zip(a, b) if x and math.isfinite(x) and math.isfinite(y)), default=0.0)
