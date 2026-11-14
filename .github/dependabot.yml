@@ -14,6 +14,9 @@ updates:
     directory: /requirements
     schedule:
       interval: weekly
+    # Only raise a lower bound when the current range excludes a new release,
+    # so `>=` floors keep supporting Python 3.10-3.13.
+    versioning-strategy: increase-if-necessary
     groups:
       python:
         patterns: ["*"]
