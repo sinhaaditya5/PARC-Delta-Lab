@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+type: software
+title: "PARC-Delta Lab: p-11B alpha-channeling research model and PDX-1 test-stand concept study"
+abstract: >-
+  An open, reproducible research codebase combining PARC-Delta v1.6, an exploratory
+  p-11B alpha-channeling model (linear and finite-k_parallel ion-Bernstein-wave kinetics,
+  sequential p-11B alpha birth kinematics, conserving Coulomb Monte Carlo and Rosenbluth,
+  Takizuka-Abe and Nanbu alpha slowing-down), with PDX-1, a concept linear magnetized
+  test stand designed, simulated and rendered from a single parameter file. Concept study
+  only; no claim of fusion gain or net power.
+authors:
+  - given-names: "Aditya"
+    alias: "aditbytes"
+version: "1.6.0"
+date-released: "2026-11-14"
+license: MIT
+repository-code: "https://github.com/aditbytes/PARC-Delta-Lab"
+keywords:
+  - fusion
+  - proton-boron
+  - p-B11
+  - alpha channeling
+  - ion Bernstein wave
+  - Fokker-Planck
+  - Coulomb collisions
+  - magnetic mirror
+  - plasma physics
+  - reproducible research
