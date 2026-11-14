@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
@@ -92,16 +93,16 @@ def d2():
     fig, ax = canvas()
     title(ax, "Closed-loop resonance scheduler (the hypothesis under test)",
           "Distribution-aware control of a coupled set of IBW modes — PARC-Delta research hypothesis, not a demonstrated result")
-    s = box(ax, 4, 18.5, 20, 16.5, "1 · SENSE", "Si α-spectrometer, FILD\nB-dot wave spectra\nRFEA proton heating\nThomson ne, Te", "green")
-    e = box(ax, 28, 18.5, 20, 16.5, "2 · ESTIMATE", "α phase-space gradients\nspecies-resolved γ\n(PARC-Delta kinetic\nmodel + ledger)", "blue")
-    d = box(ax, 52, 18.5, 20, 16.5, "3 · DECIDE", "choose channels A1–A4:\nfrequency, phase, power\nvia resonance map\n(layer moves with f)", "orange")
-    a = box(ax, 76, 18.5, 20, 16.5, "4 · ACT", "4× RF amplifiers\nmatching networks\nFaraday-shielded straps", "orange")
-    p = box(ax, 34, 2, 32, 11.5, "PLASMA", "α → IBW → protons (irreversible heat?)\nα → electrons (collisional baseline)", "purple", bsize=9.6)
+    box(ax, 4, 18.5, 20, 16.5, "1 · SENSE", "Si α-spectrometer, FILD\nB-dot wave spectra\nRFEA proton heating\nThomson ne, Te", "green")
+    box(ax, 28, 18.5, 20, 16.5, "2 · ESTIMATE", "α phase-space gradients\nspecies-resolved γ\n(PARC-Delta kinetic\nmodel + ledger)", "blue")
+    box(ax, 52, 18.5, 20, 16.5, "3 · DECIDE", "choose channels A1–A4:\nfrequency, phase, power\nvia resonance map\n(layer moves with f)", "orange")
+    box(ax, 76, 18.5, 20, 16.5, "4 · ACT", "4× RF amplifiers\nmatching networks\nFaraday-shielded straps", "orange")
+    box(ax, 34, 2, 32, 11.5, "PLASMA", "α → IBW → protons (irreversible heat?)\nα → electrons (collisional baseline)", "purple", bsize=9.6)
     for x0, x1 in ((24.5, 27.6), (48.5, 51.6), (72.5, 75.6)):
         arrow(ax, (x0, 27), (x1, 27), color=INK)
     arrow(ax, (86, 18.1), (66.5, 8), "RF fields", COLORS["accent"], rad=-0.25, loff=(3, -1))
     arrow(ax, (33.6, 8), (14, 18.1), "measurements", COLORS["good"], rad=-0.25, loff=(-4, -1))
-    c = box(ax, 22, 36.8, 56, 6.0, "Constraints enforced every cycle", "", "red", tsize=11)
+    box(ax, 22, 36.8, 56, 6.0, "Constraints enforced every cycle", "", "red", tsize=11)
     ax.text(50, 37.8, "RF budget ≤ fixed · electron heating ≤ baseline · wall load ≤ limit · stop rules (Gate 5)",
             ha="center", fontsize=9.5, color=INK)
     fig.savefig(OUT / "d2_control_loop.png", dpi=200)

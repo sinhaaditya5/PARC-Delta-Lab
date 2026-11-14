@@ -25,6 +25,7 @@ import time
 from pathlib import Path
 
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
@@ -35,11 +36,11 @@ LAB = HERE.parents[1]
 sys.path.insert(0, str(HERE.parent / "design"))
 sys.path.insert(0, str(LAB / "parc-delta" / "src"))
 import pdx1_params as P  # noqa: E402
-from plotstyle import apply_style, COLORS  # noqa: E402
 from parc_delta_v10.pb11_alpha_source import (  # noqa: E402
     e_cm_from_proton_lab_energy,
     sample_pb11_alpha_birth,
 )
+from plotstyle import COLORS, apply_style  # noqa: E402
 
 OUT = HERE / "out"
 M_ALPHA = physical_constants["alpha particle mass"][0]

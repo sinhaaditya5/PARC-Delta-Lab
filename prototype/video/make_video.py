@@ -4,7 +4,6 @@ Output: video/out/PDX1_explainer.mp4 (1920x1080, 30 fps, H.264/AAC) + captions (
 """
 from __future__ import annotations
 
-import json
 import shutil
 import subprocess
 from pathlib import Path

@@ -249,7 +249,6 @@ def build():
     cmd("line", points=[E(0, -800), E(0, 1250)])
     layer("OUTLINE")
     cmd("circle", center=E(0, 0), radius=ro)
-    h_ves = None
     cmd("circle", center=E(0, 0), radius=ri)
     layer("HATCH")
     cmd("hatch", points=[E(0, ri + 4)], pattern="ANSI31", scale=4)

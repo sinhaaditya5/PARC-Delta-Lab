@@ -15,7 +15,7 @@ on the water-cooled end plate at the left end.
 """
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 # ---------------------------------------------------------------- physics targets
 B0_TARGET_T = 3.0            # central-cell field on axis at X = 0
