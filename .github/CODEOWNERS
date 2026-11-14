@@ -1,0 +1,5 @@
+# Default reviewers for every change.
+*                       @aditbytes
+
+# The frozen research release: changes require a new research version.
+/parc-delta/            @aditbytes
