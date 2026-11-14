@@ -1,0 +1,46 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ── Node ──────────────────────────────────────────────────────────────────
+node_modules/
+
+# ── Generated pipeline outputs (rebuild with `make all`) ──────────────────
+# Every stage writes to its own `out/` folder; curated copies of the
+# results live in `deliverables/` and full-resolution binaries are published
+# as GitHub Release assets.
+prototype/*/out/
+runs/
+
+# ── Local toolchains & caches (never commit) ──────────────────────────────
+tools/
+.cache/
+*.blend1
+
+# ── OS / editor ───────────────────────────────────────────────────────────
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*~
+
+# ── Secrets ───────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
