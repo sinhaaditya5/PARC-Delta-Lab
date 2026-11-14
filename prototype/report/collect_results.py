@@ -38,7 +38,7 @@ def nums(path: Path) -> list[float]:
 
 
 def repro() -> dict:
-    orig = LAB / "PARC-Delta-v1.6" / "results"
+    orig = LAB / "parc-delta" / "results"
     rerun = LAB / "runs" / "v16_rerun" / "results"
     files, total, worst = [], 0, 0.0
     for f in sorted(orig.glob("v16_*")):

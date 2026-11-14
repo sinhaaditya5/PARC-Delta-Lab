@@ -255,10 +255,10 @@ async function build() {
 
   // ---------------------------------------------------------------- appendix
   children.push(H1("Appendix A. Reproducing this report"));
-  children.push(P("All files live on the project SSD under /Volumes/Aditya ssd/PARC-Delta-Lab. After sourcing tools/env.sh:"));
+  children.push(P("All sources live in the PARC-Delta-Lab repository. From the repository root (or run `make all`):"));
   [
-    "pytest -q  (in PARC-Delta-v1.6)  →  76 tests",
-    "python scripts_run_v16.py  (in runs/v16_rerun)  →  v1.6 results",
+    "pytest -q  (in parc-delta)  →  76 tests",
+    "python scripts_run_v16.py  (in runs/v16_rerun, made by `make rerun`)  →  v1.6 results",
     "python prototype/sim/magnet_field.py, alpha_orbits.py, bench_physics.py  →  device simulations",
     "python prototype/cad/pdx1_model.py  →  STEP + STL;  python prototype/drawings/make_ga_drawing.py  →  CADCraft drawing",
     "$BLENDER -b --factory-startup -P prototype/renders/blender_scene.py -- hero  →  renders",
