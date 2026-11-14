@@ -91,7 +91,7 @@ report: sims cad ## Collect T1-T11 into results_summary.json
 	cd $(PROTO)/report && "$(PYTHON)" collect_results.py > /dev/null
 
 docs: report diagrams ## Test report (.docx) and deck (.pptx)
-	cd $(PROTO)/docs && "$(NPM)" install --no-audit --no-fund && "$(NPM)" run build
+	cd $(PROTO)/docs && "$(NPM)" ci --no-audit --no-fund && "$(NPM)" run build
 
 video: report diagrams turntable ## Narrated explainer (macOS: needs `say`)
 	cd $(PROTO)/video && "$(PYTHON)" make_video.py
