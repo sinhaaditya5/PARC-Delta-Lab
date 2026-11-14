@@ -1,0 +1,29 @@
+name: Physics / results question
+description: Question or disagreement about a model, assumption or published number.
+labels: [physics]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Disagreement is welcome. Please be specific about inputs and method so the result can be reproduced.
+  - type: input
+    id: result
+    attributes:
+      label: Result or assumption in question
+      placeholder: "e.g. T7 target-hit fraction, docs/RESULTS.md"
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern
+      description: What do you think is wrong or missing, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Your numbers, references (DOI / arXiv) and how you obtained them.
+    validations:
+      required: true
